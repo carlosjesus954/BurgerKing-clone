@@ -1,0 +1,58 @@
+.Header {
+  background-color: #f5ebdc;
+  position: fixed;
+  width: 100%;
+}
+.Header-global {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.Header-logo {
+  width: 5rem;
+  position: absolute;
+  bottom: -1rem;
+}
+.Header-nav {
+  margin-left: 4rem;
+}
+.Header-ul {
+  display: flex;
+}
+.Header-link {
+  margin-right: 16px;
+  color: #502314;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.Header-container {
+  display: flex;
+  align-items: center;
+}
+.Header-subcontainer {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.Header-img--spain {
+  width: 2rem;
+  height: 2rem;
+}
+.Header-btn {
+  border-radius: 0.8rem;
+  border-style: none;
+  background-color: #d62300;
+  padding: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.Home {
+  padding-top: 6rem;
+  background-color: red;
+}
+
+/*# sourceMappingURL=index.css.map */

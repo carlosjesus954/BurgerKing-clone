@@ -1,0 +1,56 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.Header {
+  background-color: #f5ebdc;
+  position: fixed;
+  width: 100%;
+  &-global {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+  }
+  &-logo {
+    width: 5rem;
+    position: absolute;
+    // left: 0rem;
+    bottom: -1rem;
+  }
+  &-nav {
+    margin-left: 4rem;
+  }
+  &-ul {
+    // background-color: red;
+    display: flex;
+  }
+  &-link {
+    margin-right: 16px;
+    color: #502314;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  &-container {
+    display: flex;
+    align-items: center;
+  }
+  &-subcontainer {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+  &-img--spain {
+    width: 2rem;
+    height: 2rem;
+  }
+  &-btn {
+    border-radius: 0.8rem;
+    border-style: none;
+    background-color: #d62300;
+    padding: 16px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
