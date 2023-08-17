@@ -3,7 +3,8 @@ import { AuthContext } from "../context/AuthContext";
 import { NavLink } from "react-router-dom";
 
 export const NavBar = () => {
-  const { Nav, navExtra, menu, openMenu } = useContext(AuthContext);
+  const { Nav, navExtra, menu, openMenu, linkExtra, openLink } =
+    useContext(AuthContext);
   return (
     <header className="Header">
       <div className="Header-global Wrapper">
@@ -28,7 +29,11 @@ export const NavBar = () => {
                 <li className="Header-link Header-link--extra">burger king</li>
                 <div className="Header-link--mostrar">
                   {navExtra.map((ele) => (
-                    <a href={ele.href} className="Header-link" key={ele.id}>
+                    <a
+                      href={ele.href}
+                      className="Header-link Header-link--diff"
+                      key={ele.id}
+                    >
                       {ele.title}
                     </a>
                   ))}

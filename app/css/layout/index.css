@@ -10,6 +10,12 @@
   justify-content: space-between;
   padding: 16px;
 }
+@media screen and (min-width: 1050px) {
+  .Header-global {
+    justify-content: center;
+    gap: 3rem;
+  }
+}
 .Header-logo {
   width: 5rem;
   position: absolute;
@@ -23,11 +29,22 @@
   text-align: center;
   z-index: 1;
 }
+@media screen and (min-width: 1050px) {
+  .Header-ul {
+    text-align: none;
+    flex-flow: row nowrap;
+  }
+}
 .Header-link {
   color: #502314;
   text-transform: uppercase;
   font-weight: bold;
   font-weight: 800;
+}
+@media screen and (min-width: 1050px) {
+  .Header-link {
+    font-size: 0.8rem;
+  }
 }
 .Header-link--extra {
   cursor: pointer;
@@ -35,6 +52,11 @@
 .Header-container {
   display: flex;
   align-items: center;
+}
+@media screen and (min-width: 1050px) {
+  .Header-container {
+    justify-content: space-between;
+  }
 }
 .Header-container--englobal {
   display: flex;
@@ -50,6 +72,21 @@
   height: 100%;
   z-index: -1;
   transition: all 0.5s ease;
+}
+@media screen and (min-width: 1050px) {
+  .Header-container--englobal {
+    width: auto;
+    height: auto;
+    position: relative;
+    left: 0;
+    flex-flow: row nowrap;
+    margin-left: 6rem;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .Header-container--englobal {
+    gap: 4rem;
+  }
 }
 .Header-container--englobalActive {
   right: 0;
@@ -72,10 +109,50 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+@media screen and (min-width: 1050px) {
+  .Header-btn {
+    padding: 0.7rem;
+  }
+}
 .Header-link--mostrar {
-  display: flex;
+  display: none;
+  opacity: 0;
+  top: 6rem;
   flex-flow: column nowrap;
   gap: 2rem;
+}
+@media screen and (min-width: 1050px) {
+  .Header-link--mostrar {
+    position: fixed;
+    background-color: #f5ebdc;
+    right: 18%;
+    padding: 0.8rem;
+    text-align: start;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .Header-link--mostrar {
+    right: 20%;
+  }
+}
+@media screen and (min-width: 1250px) {
+  .Header-link--mostrar {
+    right: 24%;
+  }
+}
+@media screen and (min-width: 1340px) {
+  .Header-link--mostrar {
+    right: 28%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .Header-link--mostrar {
+    right: 32%;
+  }
+}
+.Header-link--diff {
+  color: #d62300;
 }
 .Header-menu {
   width: 2.5rem;
@@ -85,7 +162,7 @@
   border-radius: 2rem;
   padding: 0.5rem;
 }
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1050px) {
   .Header-menu {
     display: none;
   }

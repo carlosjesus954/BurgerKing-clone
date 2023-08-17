@@ -70,12 +70,19 @@ const navExtra = [
 
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
+  const [linkExtra, setLinkExtra] = useState(false);
   const openMenu = () => {
     setmenu(!menu);
     console.log(menu);
   };
+  const openLink = () => {
+    setLinkExtra(!linkExtra);
+    console.log(linkExtra);
+  };
   return (
-    <AuthContext.Provider value={{ Nav, navExtra, menu, openMenu }}>
+    <AuthContext.Provider
+      value={{ Nav, navExtra, menu, openMenu, linkExtra, openLink }}
+    >
       {children}
     </AuthContext.Provider>
   );

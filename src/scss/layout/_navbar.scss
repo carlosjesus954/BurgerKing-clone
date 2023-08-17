@@ -11,6 +11,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 16px;
+    @include m.tabletL {
+      justify-content: center;
+      gap: 3rem;
+    }
   }
   &-logo {
     width: 5rem;
@@ -27,6 +31,10 @@
     gap: 2rem;
     text-align: center;
     z-index: 1;
+    @include m.tabletL {
+      text-align: none;
+      flex-flow: row nowrap;
+    }
   }
   &-link {
     // margin-right: 16px;
@@ -34,6 +42,9 @@
     text-transform: uppercase;
     font-weight: bold;
     font-weight: 800;
+    @include m.tabletL {
+      font-size: 0.8rem;
+    }
   }
   &-link--extra {
     cursor: pointer;
@@ -41,6 +52,10 @@
   &-container {
     display: flex;
     align-items: center;
+    @include m.tabletL {
+      // gap: 4rem;
+      justify-content: space-between;
+    }
   }
   &-container--englobal {
     display: flex;
@@ -56,6 +71,18 @@
     height: 100%;
     z-index: -1;
     transition: all 0.5s ease;
+    @include m.tabletL {
+      width: auto;
+      height: auto;
+      position: relative;
+      left: 0;
+      flex-flow: row nowrap;
+      // gap: 8rem;
+      margin-left: 6rem;
+    }
+    @include m.desktop {
+      gap: 4rem;
+    }
   }
   &-container--englobalActive {
     right: 0;
@@ -77,11 +104,40 @@
     color: white;
     text-transform: uppercase;
     font-weight: bold;
+    @include m.tabletL {
+      padding: 0.7rem;
+    }
   }
   &-link--mostrar {
-    display: flex;
+    display: none;
+    opacity: 0;
+    top: 6rem;
     flex-flow: column nowrap;
     gap: 2rem;
+    @include m.tabletL {
+      position: fixed;
+      background-color: #f5ebdc;
+      right: 18%;
+      padding: 0.8rem;
+      text-align: start;
+      gap: 1rem;
+    }
+    @include m.linksL {
+      right: 20%;
+    }
+    @include m.desktop {
+      right: 24%;
+    }
+    @include m.linksXL {
+      right: 28%;
+    }
+    @include m.desktopL {
+      right: 32%;
+    }
+  }
+  &-link--diff {
+    // font-size: 0.9rem;
+    color: #d62300;
   }
   &-menu {
     width: 2.5rem;
