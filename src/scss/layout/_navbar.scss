@@ -28,7 +28,7 @@
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    gap: 2rem;
+    gap: 1.5rem;
     text-align: center;
     z-index: 1;
     @include m.tabletL {
@@ -109,12 +109,14 @@
     }
   }
   &-link--mostrar {
-    display: none;
-    opacity: 0;
+    display: flex;
+    opacity: 1;
     top: 6rem;
     flex-flow: column nowrap;
-    gap: 2rem;
+    gap: 1.5rem;
     @include m.tabletL {
+      opacity: 0;
+      display: none;
       position: fixed;
       background-color: #f5ebdc;
       right: 18%;
@@ -137,7 +139,9 @@
   }
   &-link--diff {
     // font-size: 0.9rem;
-    color: #d62300;
+    @include m.tabletL {
+      color: #d62300;
+    }
   }
   &-menu {
     width: 2.5rem;

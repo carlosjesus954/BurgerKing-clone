@@ -25,7 +25,7 @@
   padding: 0;
   display: flex;
   flex-flow: column nowrap;
-  gap: 2rem;
+  gap: 1.5rem;
   text-align: center;
   z-index: 1;
 }
@@ -115,14 +115,16 @@
   }
 }
 .Header-link--mostrar {
-  display: none;
-  opacity: 0;
+  display: flex;
+  opacity: 1;
   top: 6rem;
   flex-flow: column nowrap;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 @media screen and (min-width: 1050px) {
   .Header-link--mostrar {
+    opacity: 0;
+    display: none;
     position: fixed;
     background-color: #f5ebdc;
     right: 18%;
@@ -151,8 +153,10 @@
     right: 32%;
   }
 }
-.Header-link--diff {
-  color: #d62300;
+@media screen and (min-width: 1050px) {
+  .Header-link--diff {
+    color: #d62300;
+  }
 }
 .Header-menu {
   width: 2.5rem;
