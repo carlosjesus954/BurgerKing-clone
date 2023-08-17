@@ -15,25 +15,48 @@
   position: absolute;
   bottom: -1rem;
 }
-.Header-nav {
-  margin-left: 4rem;
-}
 .Header-ul {
+  padding: 0;
   display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  text-align: center;
+  z-index: 1;
 }
 .Header-link {
-  margin-right: 16px;
   color: #502314;
   text-transform: uppercase;
   font-weight: bold;
+  font-weight: 800;
+}
+.Header-link--extra {
+  cursor: pointer;
 }
 .Header-container {
   display: flex;
   align-items: center;
 }
+.Header-container--englobal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: fixed;
+  bottom: 0;
+  right: -100%;
+  background-color: #f5ebdc;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.5s ease;
+}
+.Header-container--englobalActive {
+  right: 0;
+}
 .Header-subcontainer {
   display: flex;
-  gap: 16px;
+  gap: 4rem;
   align-items: center;
 }
 .Header-img--spain {
@@ -48,6 +71,24 @@
   color: white;
   text-transform: uppercase;
   font-weight: bold;
+}
+.Header-link--mostrar {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+.Header-menu {
+  width: 2.5rem;
+  cursor: pointer;
+  background-color: #502314;
+  fill: white;
+  border-radius: 2rem;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 1000px) {
+  .Header-menu {
+    display: none;
+  }
 }
 
 .Home {
