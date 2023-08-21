@@ -5,6 +5,9 @@ import { NavLink } from "react-router-dom";
 export const NavBar = () => {
   const { Nav, navExtra, menu, openMenu, linkExtra, openLink } =
     useContext(AuthContext);
+  const comprobarNav = () => {
+    console.log("hola");
+  };
   return (
     <header className="Header">
       <div className="Header-global Wrapper">
@@ -22,7 +25,12 @@ export const NavBar = () => {
             <nav className="Header-nav">
               <ul className="Header-ul">
                 {Nav.map((ele) => (
-                  <NavLink key={ele.id} to={ele.to} className="Header-link">
+                  <NavLink
+                    key={ele.id}
+                    to={ele.to}
+                    className="Header-link"
+                    onClick={() => comprobarNav()}
+                  >
                     {ele.title}
                   </NavLink>
                 ))}
@@ -33,6 +41,7 @@ export const NavBar = () => {
                       href={ele.href}
                       className="Header-link Header-link--diff"
                       key={ele.id}
+                      onClick={() => comprobarNav()}
                     >
                       {ele.title}
                     </a>
