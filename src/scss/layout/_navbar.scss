@@ -22,13 +22,16 @@
     bottom: -1rem;
   }
   &-nav {
-    // margin-left: 4rem;
+    margin-top: 10rem;
+    @include m.tablet {
+      margin-top: 0;
+    }
   }
   &-ul {
     padding: 0;
     display: flex;
     flex-flow: column nowrap;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
     z-index: 1;
     @include m.tabletL {
@@ -60,7 +63,7 @@
   &-container--englobal {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     gap: 2rem;
     position: fixed;
     bottom: 0;
@@ -71,13 +74,14 @@
     height: 100%;
     z-index: -1;
     transition: all 0.5s ease;
+    overflow: scroll;
     @include m.tabletL {
+      overflow: auto;
       width: auto;
       height: auto;
       position: relative;
       left: 0;
       flex-flow: row nowrap;
-      // gap: 8rem;
       margin-left: 6rem;
     }
     @include m.desktop {
@@ -105,7 +109,7 @@
     text-transform: uppercase;
     font-weight: bold;
     @include m.tabletL {
-      padding: 0.7rem;
+      padding: 0.8rem;
     }
   }
   &-link--mostrar {
@@ -113,7 +117,7 @@
     opacity: 1;
     top: 6rem;
     flex-flow: column nowrap;
-    gap: 1.5rem;
+    gap: 1rem;
     @include m.tabletL {
       opacity: 0;
       display: none;

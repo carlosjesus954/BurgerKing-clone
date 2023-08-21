@@ -21,11 +21,19 @@
   position: absolute;
   bottom: -1rem;
 }
+.Header-nav {
+  margin-top: 10rem;
+}
+@media screen and (min-width: 742px) {
+  .Header-nav {
+    margin-top: 0;
+  }
+}
 .Header-ul {
   padding: 0;
   display: flex;
   flex-flow: column nowrap;
-  gap: 1.5rem;
+  gap: 1rem;
   text-align: center;
   z-index: 1;
 }
@@ -61,7 +69,6 @@
 .Header-container--englobal {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
   position: fixed;
   bottom: 0;
@@ -72,9 +79,11 @@
   height: 100%;
   z-index: -1;
   transition: all 0.5s ease;
+  overflow: scroll;
 }
 @media screen and (min-width: 1050px) {
   .Header-container--englobal {
+    overflow: auto;
     width: auto;
     height: auto;
     position: relative;
@@ -111,7 +120,7 @@
 }
 @media screen and (min-width: 1050px) {
   .Header-btn {
-    padding: 0.7rem;
+    padding: 0.8rem;
   }
 }
 .Header-link--mostrar {
@@ -119,7 +128,7 @@
   opacity: 1;
   top: 6rem;
   flex-flow: column nowrap;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 @media screen and (min-width: 1050px) {
   .Header-link--mostrar {
