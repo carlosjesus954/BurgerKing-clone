@@ -68,6 +68,43 @@ const navExtra = [
 
 // Fin del nav
 
+// slither
+
+const slither = [
+  {
+    id: 0,
+    img: "../../public/assets/FEATURED_ORIGINAL_CARNE_ANGUS_MENU.png",
+    title: "Menú Originals - Angus Grill",
+    colorTitle: "#F5EBDC",
+    btn: "pide ahora",
+    backgroundBtn: "#F5EBDC",
+    background: "#502314",
+    colorLetter: "#502314",
+    to: "pedir",
+  },
+  {
+    id: 1,
+    img: "../../public/assets/FEATURED_KING_AROS.png",
+    title: "Cubo King Aros",
+    colorTitle: "#F5EBDC",
+    btn: "pide ahora",
+    backgroundBtn: "#F5EBDC",
+    background: "#D62300",
+    colorLetter: "#D62300",
+    to: "pedir",
+  },
+  {
+    id: 2,
+    img: "../../public/assets/FEATURED_KING_JR.png",
+    title: "King Jr",
+    colorTitle: "#502314",
+    btn: "pide ahora",
+    backgroundBtn: "#502314",
+    background: "#FFAA00",
+    colorLetter: "#FFAA00",
+    to: "pedir",
+  },
+];
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -81,7 +118,7 @@ export const Provider = ({ children }) => {
   };
   return (
     <AuthContext.Provider
-      value={{ Nav, navExtra, menu, openMenu, linkExtra, openLink }}
+      value={{ Nav, navExtra, menu, openMenu, linkExtra, openLink, slither }}
     >
       {children}
     </AuthContext.Provider>

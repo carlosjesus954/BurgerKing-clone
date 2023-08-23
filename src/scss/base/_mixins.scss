@@ -22,6 +22,11 @@
     @content;
   }
 }
+@mixin telefonoEx {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
 @mixin tablet {
   @media screen and (min-width: 742px) {
     @content;

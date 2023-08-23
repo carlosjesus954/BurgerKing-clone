@@ -225,11 +225,73 @@
   font-size: 1.5rem;
   color: white;
   margin-right: 1rem;
+  text-transform: uppercase;
 }
 .Home-logo {
   position: relative;
   filter: invert(91%) sepia(7%) saturate(1010%) hue-rotate(325deg) brightness(109%) contrast(92%);
   width: 2rem;
+}
+
+.Slither {
+  overflow: hidden;
+  position: relative;
+}
+.Slither-global {
+  display: flex;
+  width: 150%;
+  transition: transform 1s ease;
+  position: relative;
+}
+.Slither-global--moveRight {
+  transform: translateX(-33%);
+}
+.Slither-cards {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  gap: 2rem;
+  height: auto;
+  width: 50%;
+  padding: 1rem;
+}
+.Slither-btns {
+  width: 100%;
+  bottom: 50%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+.Slither-btn--arrow {
+  fill: white;
+  width: 2rem;
+  cursor: pointer;
+}
+.Slither-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .Slither-h3 {
+    font-size: 1rem;
+  }
+}
+.Slither-link {
+  border-radius: 0.8rem;
+  font-weight: bold;
+  display: block;
+  padding: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .Slither-link {
+    font-size: 0.8rem;
+    padding: 0.5rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,65 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.Slither {
+  overflow: hidden;
+  position: relative;
+  &-global {
+    display: flex;
+    width: 150%;
+    transition: transform 1s ease;
+    position: relative;
+  }
+  &-global--moveRight {
+    // transition: all 0.5s ease;
+    transform: translateX(-33%);
+  }
+  &-cards {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    // justify-content: center;
+    gap: 2rem;
+    height: auto;
+    width: 50%;
+    padding: 1rem;
+  }
+  &-img {
+  }
+  &-btns {
+    width: 100%;
+    bottom: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+  }
+  &-btn--arrow {
+    fill: white;
+    width: 2rem;
+    cursor: pointer;
+  }
+  &-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  &-h3 {
+    @include m.telefonoEx {
+      font-size: 1rem;
+    }
+  }
+  &-link {
+    border-radius: 0.8rem;
+    font-weight: bold;
+    display: block;
+    padding: 1rem;
+    @include m.telefonoEx {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+    }
+  }
+}
