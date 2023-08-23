@@ -243,6 +243,11 @@
   transition: transform 1s ease;
   position: relative;
 }
+@media screen and (max-width: 500px) {
+  .Slither-global {
+    width: 300%;
+  }
+}
 .Slither-global--moveRight {
   transform: translateX(-33%);
 }
@@ -254,6 +259,11 @@
   height: auto;
   width: 50%;
   padding: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .Slither-cards {
+    width: 100%;
+  }
 }
 .Slither-btns {
   width: 100%;
