@@ -5,13 +5,14 @@
   background-color: #f5ebdc;
   position: fixed;
   width: 100%;
+  z-index: 1;
+
   &-global {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 16px;
-    // z-index: 1;
     @include m.tabletL {
       justify-content: center;
       gap: 3rem;

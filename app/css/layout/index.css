@@ -2,6 +2,7 @@
   background-color: #f5ebdc;
   position: fixed;
   width: 100%;
+  z-index: 1;
 }
 .Header-global {
   position: relative;
