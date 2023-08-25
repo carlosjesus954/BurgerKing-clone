@@ -243,11 +243,6 @@
   transition: transform 1s ease;
   position: relative;
 }
-@media screen and (max-width: 500px) {
-  .Slither-global {
-    width: 300%;
-  }
-}
 .Slither-global--moveRight {
   transform: translateX(-33%);
 }
@@ -259,11 +254,6 @@
   height: auto;
   width: 50%;
   padding: 1rem;
-}
-@media screen and (max-width: 500px) {
-  .Slither-cards {
-    width: 100%;
-  }
 }
 .Slither-btns {
   width: 100%;
@@ -302,6 +292,100 @@
     font-size: 0.8rem;
     padding: 0.5rem;
   }
+}
+
+.Carrusel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.Carrusel-global {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+}
+.Carrusel-container {
+  width: 400%;
+  transition: transform 1s ease;
+}
+.Carrusel-subcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.Carrusel-container--move1 {
+  transform: translateX(-25%);
+}
+.Carrusel-container--move2 {
+  transform: translateX(-50%);
+}
+.Carrusel-container--move3 {
+  transform: translateX(-75%);
+}
+.Carrusel-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Carrusel-text {
+  width: 100%;
+  height: 14rem;
+  max-width: 30rem;
+  padding: 1rem;
+  background-color: rgba(80, 35, 20, 0.8745098039);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 2rem;
+  text-align: left;
+}
+.Carrusel-h3 {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: white;
+}
+.Carrusel-span {
+  font-weight: bold;
+  color: white;
+}
+.Carrusel-btns {
+  width: 100%;
+  background-color: rgba(80, 35, 20, 0.8745098039);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  gap: 2rem;
+}
+.Carrusel-btn {
+  color: transparent;
+  background-color: grey;
+  border-radius: 100%;
+  width: 1rem;
+  cursor: pointer;
+}
+.Carrusel-btn--active {
+  background-color: rgb(222, 222, 222);
+  border-radius: 100%;
+  width: 1rem;
+}
+
+.Carrusel-0 {
+  background-image: url(../../../public/assets/home-car-01.jpg);
+}
+
+.Carrusel-1 {
+  background-image: url(../../../public/assets/home_vertical_slide_2.png);
+}
+
+.Carrusel-2 {
+  background-image: url(../../../public/assets/home_vertical_slide_3.png);
+}
+
+.Carrusel-3 {
+  background-image: url(../../../public/assets/home_vertical_slide_4.png);
 }
 
 /*# sourceMappingURL=index.css.map */

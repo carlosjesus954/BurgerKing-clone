@@ -9,28 +9,19 @@
     width: 150%;
     transition: transform 1s ease;
     position: relative;
-    @include m.telefonoEx {
-      width: 300%;
-    }
   }
   &-global--moveRight {
-    // transition: all 0.5s ease;
     transform: translateX(-33%);
-    @include m.telefonoEx {
-    }
   }
   &-cards {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    // justify-content: center;
+
     gap: 2rem;
     height: auto;
     width: 50%;
     padding: 1rem;
-    @include m.telefonoEx {
-      width: 100%;
-    }
   }
   &-img {
   }

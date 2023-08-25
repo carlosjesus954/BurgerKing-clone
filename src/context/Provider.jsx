@@ -105,6 +105,49 @@ const slither = [
     to: "pedir",
   },
 ];
+
+//carrusel home
+
+const carrusel = [
+  {
+    id: 0,
+    title: "somos parrilleros desde 1954",
+    parraf:
+      "Sabemos que nuestras hamburguesas a la parrilla te hacen tilín. Si miras en su interior, descubrirás que su carne es 100% vacuno, sin conservantes ni aditivos, provenientes de la Peninsula Ibérica",
+  },
+  {
+    id: 1,
+    title: "¿y también unos frescos!",
+    parraf:
+      "Tanto como nuestros ingredientes, cortados dia a dia en nuestras cocinas.",
+  },
+  {
+    id: 2,
+    title: "trabajamos con los mejores",
+    parraf:
+      "Trabajamos con los proveedores que nos proporcionan las mejores materias primas para conseguir un producto final de primera calidad. bimbo y dulcesol nos proporncionan los mejores panes. Kerner nos acerca sus mas frescas hortalizas y verduras. En nuestras cocinas sólo utilizamos aceite de girasol.",
+  },
+  {
+    id: 3,
+    title: "calidad de excelencia",
+    parraf:
+      "La misma que nos hace reconocibles en todo el mmundo como los verdaderos Kings! Por nuestras recetas que te encantan, la elección de los mejores ingredientes y hasta por la manera en la que recibimos a quienes nos visitan cada día en nuestros restaurantes.",
+  },
+];
+const carruselBtns = [
+  {
+    id: 0,
+  },
+  {
+    id: 1,
+  },
+  {
+    id: 2,
+  },
+  {
+    id: 3,
+  },
+];
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -118,7 +161,17 @@ export const Provider = ({ children }) => {
   };
   return (
     <AuthContext.Provider
-      value={{ Nav, navExtra, menu, openMenu, linkExtra, openLink, slither }}
+      value={{
+        Nav,
+        navExtra,
+        menu,
+        openMenu,
+        linkExtra,
+        openLink,
+        slither,
+        carrusel,
+        carruselBtns,
+      }}
     >
       {children}
     </AuthContext.Provider>
