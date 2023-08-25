@@ -332,7 +332,7 @@
 }
 .Carrusel-text {
   width: 100%;
-  height: 14rem;
+  height: 16rem;
   max-width: 30rem;
   padding: 1rem;
   background-color: rgba(80, 35, 20, 0.8745098039);
@@ -346,9 +346,19 @@
   text-transform: uppercase;
   color: white;
 }
+@media screen and (min-width: 742px) {
+  .Carrusel-h3 {
+    font-size: 1.5rem;
+  }
+}
 .Carrusel-span {
   font-weight: bold;
   color: white;
+}
+@media screen and (min-width: 742px) {
+  .Carrusel-span {
+    font-size: 1.1rem;
+  }
 }
 .Carrusel-btns {
   width: 100%;
