@@ -1,0 +1,129 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.Footer {
+  &-global {
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  &-ul {
+    background-color: #502314;
+
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    @include m.tabletEx {
+      flex-flow: row nowrap;
+    }
+  }
+  &-link {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 18rem;
+    color: #f5ebdc;
+    text-decoration: none;
+    border-bottom: 1px solid #f5ebdc;
+    @include m.tabletEx {
+      height: 2rem;
+      border-bottom: none;
+      border-right: 1px solid #f5ebdc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &-link--noBorder {
+    border-right: none;
+  }
+
+  &-container {
+  }
+  &-subcontainer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #f5ebdc;
+    gap: 0.5rem;
+    font-weight: 700;
+  }
+  &-span {
+    text-transform: uppercase;
+    color: #502314;
+    cursor: pointer;
+  }
+  &-icon {
+    cursor: pointer;
+    fill: #502314;
+    width: 1rem;
+  }
+  &-show {
+    display: none;
+    background-color: #f5ebdc;
+    padding: 1rem;
+  }
+  &-show--on {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  &-showProducts {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+  }
+  &-span--show {
+    color: #d62300;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  &-links--show {
+    text-transform: capitalize;
+    color: #d62300;
+  }
+
+  &-socials {
+    padding: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #502314;
+    @include m.tabletL {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+    }
+  }
+  &-copyright {
+  }
+  &-socialsContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  &-mobile {
+    fill: #f5ebdc;
+    width: 2rem;
+  }
+  &-text {
+    color: #f5ebdc;
+  }
+  &-copy {
+    color: #f5ebdc;
+  }
+  &-socialsImgs {
+    fill: #f5ebdc;
+    width: 2rem;
+  }
+}

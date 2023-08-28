@@ -32,6 +32,11 @@
     @content;
   }
 }
+@mixin tabletEx {
+  @media screen and (min-width: 900px) {
+    @content;
+  }
+}
 @mixin tabletL {
   @media screen and (min-width: 1050px) {
     @content;

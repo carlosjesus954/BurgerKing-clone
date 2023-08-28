@@ -5,7 +5,7 @@
   background-color: #f5ebdc;
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 
   &-global {
     position: relative;
@@ -26,7 +26,7 @@
   }
   &-nav {
     margin-top: 10rem;
-    @include m.tablet {
+    @include m.tabletL {
       margin-top: 0;
     }
   }

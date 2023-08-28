@@ -148,6 +148,140 @@ const carruselBtns = [
     id: 3,
   },
 ];
+const gridImgs = [
+  {
+    id: 0,
+    img: "../../public/assets/0.jpg",
+  },
+  {
+    id: 1,
+    img: "../../public/assets/1.jpg",
+  },
+  {
+    id: 2,
+    img: "../../public/assets/2.jpg",
+  },
+  {
+    id: 3,
+    img: "../../public/assets/3.jpg",
+  },
+  {
+    id: 4,
+    img: "../../public/assets/4.jpg",
+  },
+  {
+    id: 5,
+    img: "../../public/assets/5.jpg",
+  },
+  {
+    id: 6,
+    img: "../../public/assets/6.jpg",
+  },
+  {
+    id: 7,
+    img: "../../public/assets/7.jpg",
+  },
+];
+const footer = [
+  {
+    id: 0,
+    title: "preguntas frecuentes",
+    enlace: "https://www.burgerking.es/faqs-menu",
+    border: true,
+  },
+  {
+    id: 1,
+    title: "opiniones y sugerencias",
+    enlace: "https://www.burgerking.es/contacts",
+    border: true,
+  },
+  {
+    id: 2,
+    title: "aviso legal",
+    enlace: "https://www.burgerking.es/privacy/legal-warning",
+    border: true,
+  },
+  {
+    id: 3,
+    title: "condiciones generales",
+    enlace: "https://www.burgerking.es/privacy/corp-policies",
+    border: true,
+  },
+  {
+    id: 4,
+    title: "políticas de privacidad",
+    enlace: "https://www.burgerking.es/privacy",
+    border: true,
+  },
+  {
+    id: 5,
+    title: "configuración cookies",
+    enlace: "",
+    border: false,
+  },
+];
+const footerProductos = [
+  {
+    id: 0,
+    title: "Angus",
+    to: "",
+  },
+  {
+    id: 1,
+    title: "Menú Parrilla",
+    to: "",
+  },
+  {
+    id: 2,
+    title: "Angus",
+    to: "",
+  },
+  {
+    id: 3,
+    title: "Menú pollo",
+    to: "",
+  },
+  {
+    id: 4,
+    title: "King Ahorro",
+    to: "",
+  },
+  {
+    id: 5,
+    title: "Entrantes y snacks",
+    to: "",
+  },
+  {
+    id: 6,
+    title: "100% Vegetariano",
+    to: "",
+  },
+  {
+    id: 7,
+    title: "Hamburguesas",
+    to: "",
+  },
+  {
+    id: 8,
+    title: "Postres",
+    to: "",
+  },
+  {
+    id: 9,
+    title: "Sin gluten",
+    to: "",
+  },
+  {
+    id: 10,
+    title: "Bebidas y cafés",
+    to: "",
+  },
+  {
+    id: 11,
+    title: "DOGPPER",
+    to: "",
+  },
+];
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -171,6 +305,9 @@ export const Provider = ({ children }) => {
         slither,
         carrusel,
         carruselBtns,
+        gridImgs,
+        footer,
+        footerProductos,
       }}
     >
       {children}
