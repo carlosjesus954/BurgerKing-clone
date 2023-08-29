@@ -3,7 +3,14 @@ import { AuthContext } from "../context/AuthContext";
 import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
-  const { footer, footerProductos } = useContext(AuthContext);
+  const {
+    footer,
+    footerProductos,
+    footerCalidad,
+    footerIdentificate,
+    footerSobreNosotros,
+    footerMybk,
+  } = useContext(AuthContext);
   const [footerShow, setFooterShow] = useState(false);
   const mostrarFooter = () => {
     setFooterShow(!footerShow);
@@ -69,8 +76,36 @@ export const Footer = () => {
               })}
             </div>
             <div className="Footer-showProducts">
-              <span className="Footer-span--show">productos</span>
-              {footerProductos.map((ele) => {
+              <span className="Footer-span--show">Sobre Nosotros</span>
+              {footerSobreNosotros.map((ele) => {
+                return (
+                  <a
+                    key={ele.id}
+                    href={ele.href}
+                    className="Footer-links--show"
+                  >
+                    {ele.title}
+                  </a>
+                );
+              })}
+            </div>
+            <div className="Footer-showProducts">
+              <span className="Footer-span--show">Calidad</span>
+              {footerCalidad.map((ele) => {
+                return (
+                  <a
+                    key={ele.id}
+                    href={ele.href}
+                    className="Footer-links--show"
+                  >
+                    {ele.title}
+                  </a>
+                );
+              })}
+            </div>
+            <div className="Footer-showProducts">
+              <span className="Footer-span--show">Identifícate</span>
+              {footerIdentificate.map((ele) => {
                 return (
                   <NavLink
                     key={ele.id}
@@ -83,16 +118,16 @@ export const Footer = () => {
               })}
             </div>
             <div className="Footer-showProducts">
-              <span className="Footer-span--show">productos</span>
-              {footerProductos.map((ele) => {
+              <span className="Footer-span--show">my burger king</span>
+              {footerMybk.map((ele) => {
                 return (
-                  <NavLink
+                  <a
                     key={ele.id}
-                    to={ele.to}
+                    href={ele.href}
                     className="Footer-links--show"
                   >
                     {ele.title}
-                  </NavLink>
+                  </a>
                 );
               })}
             </div>
@@ -106,10 +141,7 @@ export const Footer = () => {
               className="Footer-socialsImgs"
               viewBox="0 0 16 16"
             >
-              <path
-                fill-rule="evenodd"
-                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-              />
+              <path d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
             </svg>
             <span className="Footer-text">
               También puedes pedir por teléfono: 91 1933933 / 902 411 114

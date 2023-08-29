@@ -12,7 +12,7 @@ const Nav = [
   {
     id: 2,
     title: "carta",
-    to: "/",
+    to: "carta",
   },
   {
     id: 3,
@@ -282,6 +282,169 @@ const footerProductos = [
     to: "",
   },
 ];
+const footerCalidad = [
+  {
+    id: 0,
+    title: "lista de alérgenos",
+    href: "https://static.burgerkingencasa.es/bkhomewebsite/es/allergens_es.pdf",
+  },
+  {
+    id: 1,
+    title: "lista de nutricionales",
+    href: "https://static.burgerkingencasa.es/bkhomewebsite/es/nutrition_es.pdf",
+  },
+];
+const footerIdentificate = [
+  {
+    id: 0,
+    title: "regístrese",
+    to: "",
+  },
+];
+const footerSobreNosotros = [
+  {
+    id: 0,
+    title: "restaurante",
+    href: "https://www.burgerking.es/hiring",
+  },
+  {
+    id: 1,
+    title: "autoking",
+    href: "https://www.burgerking.es/auto-king",
+  },
+  {
+    id: 2,
+    title: "restaurantes para recoger",
+    href: "https://static.burgerkingencasa.es/bkhomewebsite/es/Restaurantes_PickUP.pdf",
+  },
+];
+const footerMybk = [
+  {
+    id: 0,
+    title: "condiciones legales",
+    href: "https://static.burgerkingencasa.es/bkhomewebsite/es/myburgerking_legal_es.pdf",
+  },
+  {
+    id: 1,
+    title: "restaurantes adheridos",
+    href: "https://static.burgerkingencasa.es/bkhomewebsite/es/myburgerking_restaurants_es.pdf",
+  },
+];
+
+// Carta
+
+const cartaPrincipal = [
+  {
+    id: 0,
+    title: "angus",
+    img: "../../public/assets/carta/1681196671003_originals_carnivora_menu_300_pet.png",
+    to: "angus",
+  },
+  {
+    id: 1,
+    title: "novedades de verano",
+    img: "../../public/assets/carta/1693289073522_MENU_SMOKEY_2C_SELLO_NUEVO_PET_ESP.png",
+    to: "novedades",
+  },
+  {
+    id: 2,
+    title: "2 para 2",
+    img: "../../public/assets/carta/1683887185749_2_para_2_moto_hd.png",
+    to: "2para2",
+  },
+  {
+    id: 3,
+    title: "menú parrilla",
+    img: "../../public/assets/carta/1675159487429_Homeria_MENU_PET_WHOPPER_600x411.png",
+    to: "menuparrilla",
+  },
+  {
+    id: 4,
+    title: "menú pollo",
+    img: "../../public/assets/carta/1693295861731_CBK_MENU-PET-1P.png",
+    to: "menupollo",
+  },
+  {
+    id: 5,
+    title: "king jr.meal",
+    img: "../../public/assets/carta/1687335196414_King_Jr-hd-esp-categ.png",
+    to: "king",
+  },
+  {
+    id: 6,
+    title: "promociones",
+    img: "../../public/assets/carta/1661412360853_img-cat-promo-hd.png",
+    to: "promociones",
+  },
+  {
+    id: 7,
+    title: "king ahorro",
+    img: "../../public/assets/carta/1678341824344_Bodegon.png",
+    to: "kingAhorro",
+  },
+  {
+    id: 8,
+    title: "entrantes y snacks",
+    img: "../../public/assets/carta/1675428884606_bodegones-app-600x411_cubos-snacks.png",
+    to: "kingAhorro",
+  },
+  {
+    id: 9,
+    title: "100% vegetariano",
+    img: "../../public/assets/carta/1648716533893_whopper-Vegetal_new.png",
+    to: "100vegetariano",
+  },
+  {
+    id: 9,
+    title: "100% vegetariano",
+    img: "../../public/assets/carta/1648716533893_whopper-Vegetal_new.png",
+    to: "100vegetariano",
+  },
+  {
+    id: 10,
+    title: "hamburguesas",
+    img: "../../public/assets/carta/1693296214128_CBK-SS-2P.png",
+    to: "hamburguesas",
+  },
+  {
+    id: 11,
+    title: "postres",
+    img: "../../public/assets/carta/1687335561808_bodegon-milka_esp.png",
+    to: "postres",
+  },
+  {
+    id: 12,
+    title: "sin gluten",
+    img: "../../public/assets/carta/1682054801763_whoppe-sin-gluten-new.png",
+    to: "singluten",
+  },
+  {
+    id: 13,
+    title: "ensaladas",
+    img: "../../public/assets/carta/1660727676038_ENSALADA_ORIGINAL_SIN_PEPINO.png",
+    to: "ensaladas",
+  },
+  {
+    id: 14,
+    title: "salsas",
+    img: "../../public/assets/carta/1635332074207_sauces.png",
+    to: "salsas",
+  },
+
+  {
+    id: 15,
+    title: "bebidas y cafés",
+    img: "../../public/assets/carta/1626330906435_img-category-bebidas@2x.png",
+    to: "bebidas",
+  },
+  {
+    id: 16,
+    title: "dogpper",
+    img: "../../public/assets/carta/1650275448609_Dogpper.png",
+    to: "dogper",
+  },
+];
+
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -308,6 +471,11 @@ export const Provider = ({ children }) => {
         gridImgs,
         footer,
         footerProductos,
+        footerCalidad,
+        footerIdentificate,
+        footerSobreNosotros,
+        footerMybk,
+        cartaPrincipal,
       }}
     >
       {children}

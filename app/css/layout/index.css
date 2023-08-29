@@ -551,4 +551,44 @@
   width: 2rem;
 }
 
+.Carta {
+  padding-top: 6rem;
+}
+.Carta-global {
+  padding: 1rem;
+}
+.Carta-span {
+  font-weight: bold;
+  color: #502314;
+  margin-bottom: 2rem;
+  font-weight: 800;
+}
+.Carta-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.Carta-cards {
+  padding: 1rem;
+  width: 10rem;
+  background-color: #f5ebdc;
+  border-radius: 1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Carta-imgs {
+  width: 8rem;
+}
+.Carta-h3 {
+  background-color: white;
+  width: 100%;
+  color: #502314;
+}
+
 /*# sourceMappingURL=index.css.map */

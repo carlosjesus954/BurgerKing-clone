@@ -1,0 +1,43 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.Carta {
+  padding-top: 6rem;
+  &-global {
+    padding: 1rem;
+  }
+  &-span {
+    font-weight: bold;
+    color: #502314;
+    margin-bottom: 2rem;
+    font-weight: 800;
+  }
+  &-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  &-cards {
+    padding: 1rem;
+    width: 10rem;
+    background-color: #f5ebdc;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &-imgs {
+    width: 8rem;
+  }
+  &-h3 {
+    background-color: white;
+    width: 100%;
+    color: #502314;
+    // height: 2rem;
+  }
+}
