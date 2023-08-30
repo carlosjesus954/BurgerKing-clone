@@ -1,0 +1,14 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.Comida {
+  padding-top: 6rem;
+  &-global {
+  }
+  &-slider {
+  }
+  &-btn {
+  }
+  &-container {
+  }
+}

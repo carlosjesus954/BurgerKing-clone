@@ -5,12 +5,20 @@
   padding-top: 6rem;
   &-global {
     padding: 1rem;
+    text-align: center;
+    @include m.desktopL {
+      text-align: start;
+    }
   }
   &-span {
     font-weight: bold;
     color: #502314;
     margin-bottom: 2rem;
     font-weight: 800;
+    font-size: 1.5rem;
+    @include m.tablet {
+      font-size: 2.5rem;
+    }
   }
   &-container {
     display: flex;
@@ -18,10 +26,13 @@
     justify-content: center;
     gap: 1rem;
     margin-top: 2rem;
+    @include m.desktopL {
+      justify-content: flex-start;
+    }
   }
   &-cards {
-    padding: 1rem;
-    width: 10rem;
+    // padding: 1rem;
+    width: 12rem;
     background-color: #f5ebdc;
     border-radius: 1rem;
     display: flex;
@@ -32,12 +43,31 @@
     text-align: center;
   }
   &-imgs {
-    width: 8rem;
+    height: 60%;
+    padding: 1rem;
+    transition: all 0.5s ease;
+    &:hover {
+      padding: 0.5rem;
+    }
+  }
+  &-subcontainer {
+    height: 40%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    width: 100%;
+    border-bottom: solid 2px #f5ebdc;
+    border-left: solid 2px #f5ebdc;
+    border-right: solid 2px #f5ebdc;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   &-h3 {
-    background-color: white;
+    padding: 0.5rem;
     width: 100%;
     color: #502314;
+    text-transform: uppercase;
     // height: 2rem;
   }
 }

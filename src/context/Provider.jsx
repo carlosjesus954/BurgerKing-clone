@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AuthContext } from "./AuthContext";
+import { useEffect } from "react";
 
 //Nav
 
@@ -395,50 +396,50 @@ const cartaPrincipal = [
     to: "100vegetariano",
   },
   {
-    id: 9,
+    id: 10,
     title: "100% vegetariano",
     img: "../../public/assets/carta/1648716533893_whopper-Vegetal_new.png",
     to: "100vegetariano",
   },
   {
-    id: 10,
+    id: 11,
     title: "hamburguesas",
     img: "../../public/assets/carta/1693296214128_CBK-SS-2P.png",
     to: "hamburguesas",
   },
   {
-    id: 11,
+    id: 12,
     title: "postres",
     img: "../../public/assets/carta/1687335561808_bodegon-milka_esp.png",
     to: "postres",
   },
   {
-    id: 12,
+    id: 13,
     title: "sin gluten",
     img: "../../public/assets/carta/1682054801763_whoppe-sin-gluten-new.png",
     to: "singluten",
   },
   {
-    id: 13,
+    id: 14,
     title: "ensaladas",
     img: "../../public/assets/carta/1660727676038_ENSALADA_ORIGINAL_SIN_PEPINO.png",
     to: "ensaladas",
   },
   {
-    id: 14,
+    id: 15,
     title: "salsas",
     img: "../../public/assets/carta/1635332074207_sauces.png",
     to: "salsas",
   },
 
   {
-    id: 15,
+    id: 16,
     title: "bebidas y cafés",
     img: "../../public/assets/carta/1626330906435_img-category-bebidas@2x.png",
     to: "bebidas",
   },
   {
-    id: 16,
+    id: 17,
     title: "dogpper",
     img: "../../public/assets/carta/1650275448609_Dogpper.png",
     to: "dogper",
@@ -448,6 +449,10 @@ const cartaPrincipal = [
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
+  const [menuMostrar, setMenuMostrar] = useState({
+    id: null,
+    to: "",
+  }); // menu de carta estado
   const openMenu = () => {
     setmenu(!menu);
     console.log(menu);
@@ -456,6 +461,19 @@ export const Provider = ({ children }) => {
     setLinkExtra(!linkExtra);
     console.log(linkExtra);
   };
+
+  const mostrarComida = (id, to) => {
+    console.log(id, to);
+
+    setMenuMostrar({
+      id: id,
+      to: to,
+    });
+  };
+  useEffect(() => {
+    console.log(menuMostrar);
+  }, [menuMostrar]);
+
   return (
     <AuthContext.Provider
       value={{
@@ -476,6 +494,8 @@ export const Provider = ({ children }) => {
         footerSobreNosotros,
         footerMybk,
         cartaPrincipal,
+        mostrarComida,
+        menuMostrar,
       }}
     >
       {children}
