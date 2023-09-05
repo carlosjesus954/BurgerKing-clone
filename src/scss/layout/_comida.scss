@@ -4,11 +4,67 @@
 .Comida {
   padding-top: 6rem;
   &-global {
+    padding: 1rem;
   }
   &-slider {
+    display: flex;
+    flex-flow: row nowrap;
+    // background-color: red;
+    gap: 1rem;
+    padding: 1rem;
+    // width: 200%;
+    overflow-x: auto;
+    margin-bottom: 2rem;
   }
-  &-btn {
+  &-cards {
+    cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    // justify-content: center;
+    flex: 1 0 auto;
+
+    gap: 1rem;
+    // width: 100%;
+  }
+  &-img {
+    width: 10rem;
+  }
+  &-h3 {
+    font-size: 1.2rem;
   }
   &-container {
+    cursor: pointer;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 2px solid #ee7700;
+    // text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background-color: #ee7700;
+    }
+  }
+  &-btn {
+    padding: 1.7rem;
+    width: 100%;
+    fill: #ee7700;
+    &:hover {
+      fill: white;
+    }
+  }
+  &-container {
+  }
+}
+.Menus {
+  &-div {
+  }
+  &-img {
+  }
+  &-subcontainer {
+  }
+  &-h4 {
   }
 }

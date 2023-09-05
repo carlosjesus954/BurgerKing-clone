@@ -8,12 +8,13 @@
     "build": "vite build",
     "preview": "vite preview",
     "sass": "sass --watch src/scss:app/css"
-
   },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.15.0",
+    "react-touch-events": "^3.0.0",
     "sass": "^1.65.1"
   },
   "devDependencies": {

@@ -445,7 +445,65 @@ const cartaPrincipal = [
     to: "dogper",
   },
 ];
-
+const angus = [
+  {
+    id: 0,
+    title: "menú angus grill (2 carnes)",
+    img: "../../public/assets/angus/1693829974453_angus_menu_4.png",
+  },
+  {
+    id: 1,
+    title: "menú angus grill (1 carnes)",
+    img: "../../public/assets/angus/1693830020385_angus_menu_1c.png",
+  },
+  {
+    id: 2,
+    title: "angus grill (2 carnes)",
+    img: "../../public/assets/angus/1693830049665_angus_SS_2c.png",
+  },
+  {
+    id: 3,
+    title: "angus grill (1 carnes)",
+    img: "../../public/assets/angus/1693830062730_angus_SS_3c.png",
+  },
+];
+const novedades = [
+  {
+    id: 0,
+    title: "baraja de cartas",
+    img: "../../public/assets/novedades/1693911108247_Cartas_Baraja_new.png",
+  },
+  {
+    id: 1,
+    title: "menú smoky steakhouse (1 carne)",
+    img: "../../public/assets/novedades/1692879188212_MENU_SMOKEY_1C_SELLO_NUEVO_VASO_ESP.png",
+  },
+  {
+    id: 2,
+    title: "menú smoky steakhouse chicken",
+    img: "../../public/assets/novedades/1693911040481_MENU_SMOKEY_CRISPY_SELLO_NUEVO_VASO_ESP.png",
+  },
+  {
+    id: 3,
+    title: "italian sticks",
+    img: "../../public/assets/novedades/1693911207961_ITALIAN_STICKS_X8.png",
+  },
+  {
+    id: 4,
+    title: "king fusion milka choco-galleta",
+    img: "../../public/assets/novedades/1687342496983_milka_choco_galleta_esp.png",
+  },
+  {
+    id: 5,
+    title: "king fusion milka oreo",
+    img: "../../public/assets/novedades/1687342510791_milka_oreo_esp.png",
+  },
+  {
+    id: 6,
+    title: "king fusion milka original",
+    img: "../../public/assets/novedades/1687342437778_milka_clasico_esp.png",
+  },
+];
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -455,24 +513,24 @@ export const Provider = ({ children }) => {
   }); // menu de carta estado
   const openMenu = () => {
     setmenu(!menu);
-    console.log(menu);
+    // console.log(menu);
   };
   const openLink = () => {
     setLinkExtra(!linkExtra);
-    console.log(linkExtra);
+    // console.log(linkExtra);
   };
 
   const mostrarComida = (id, to) => {
-    console.log(id, to);
+    // console.log(id, to);
 
     setMenuMostrar({
       id: id,
       to: to,
     });
   };
-  useEffect(() => {
-    console.log(menuMostrar);
-  }, [menuMostrar]);
+  // useEffect(() => {
+  //   console.log(menuMostrar);
+  // }, [menuMostrar]);
 
   return (
     <AuthContext.Provider
@@ -496,6 +554,8 @@ export const Provider = ({ children }) => {
         cartaPrincipal,
         mostrarComida,
         menuMostrar,
+        angus,
+        novedades,
       }}
     >
       {children}

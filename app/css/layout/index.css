@@ -634,5 +634,51 @@
 .Comida {
   padding-top: 6rem;
 }
+.Comida-global {
+  padding: 1rem;
+}
+.Comida-slider {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 2rem;
+}
+.Comida-cards {
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  flex: 1 0 auto;
+  gap: 1rem;
+}
+.Comida-img {
+  width: 10rem;
+}
+.Comida-h3 {
+  font-size: 1.2rem;
+}
+.Comida-container {
+  cursor: pointer;
+  width: 6rem;
+  height: 3rem;
+  border-radius: 2rem;
+  border: 2px solid #ee7700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Comida-container:hover {
+  background-color: #ee7700;
+}
+.Comida-btn {
+  padding: 1.7rem;
+  width: 100%;
+  fill: #ee7700;
+}
+.Comida-btn:hover {
+  fill: white;
+}
 
 /*# sourceMappingURL=index.css.map */
