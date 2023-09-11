@@ -4,15 +4,24 @@ import { AuthContext } from "../context/AuthContext";
 import { MenusTipo } from "./components/MenusTipo";
 
 export const CartaMenu = () => {
-  const { cartaPrincipal } = useContext(AuthContext);
+  const { cartaPrincipal, mostrarComida } = useContext(AuthContext);
+  const cartaMenu = ({ id, to }) => {
+    mostrarComida(id, to);
+  };
 
   return (
     <section className="Comida Wrapper">
       <article className="Comida-global">
         <div className="Comida-slider">
           {cartaPrincipal.map((ele) => {
+            const id = ele.id;
+            const to = ele.to;
             return (
-              <div className="Comida-cards" key={ele.id}>
+              <div
+                className="Comida-cards"
+                key={ele.id}
+                onClick={() => cartaMenu({ id, to })}
+              >
                 <img src={ele.img} alt={ele.title} className="Comida-img" />
                 <h3 className="Comida-h3">{ele.title}</h3>
               </div>

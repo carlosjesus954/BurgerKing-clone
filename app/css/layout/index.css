@@ -665,6 +665,7 @@
   height: 3rem;
   border-radius: 2rem;
   border: 2px solid #ee7700;
+  margin-bottom: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -679,6 +680,48 @@
 }
 .Comida-btn:hover {
   fill: white;
+}
+.Menus {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1250px) {
+  .Menus {
+    margin-bottom: 4.8rem;
+  }
+}
+.Menus-div {
+  width: 100%;
+  max-width: 18rem;
+  border-radius: 1rem;
+  background-color: #f5ebdc;
+  cursor: pointer;
+}
+.Menus-img {
+  transition: all 0.5s ease-in-out;
+  padding: 2rem;
+}
+.Menus-subcontainer {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+  border-left: solid 2px #f5ebdc;
+  border-bottom: solid 2px #f5ebdc;
+  border-right: solid 2px #f5ebdc;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.Menus-h4 {
+  font-size: 1.1rem;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.Menus-div:hover .Menus-img {
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -347,104 +347,96 @@ const cartaPrincipal = [
     img: "../../public/assets/carta/1693289073522_MENU_SMOKEY_2C_SELLO_NUEVO_PET_ESP.png",
     to: "novedades",
   },
+
   {
     id: 2,
-    title: "2 para 2",
-    img: "../../public/assets/carta/1683887185749_2_para_2_moto_hd.png",
-    to: "2para2",
-  },
-  {
-    id: 3,
     title: "menú parrilla",
     img: "../../public/assets/carta/1675159487429_Homeria_MENU_PET_WHOPPER_600x411.png",
     to: "menuparrilla",
   },
   {
-    id: 4,
+    id: 3,
     title: "menú pollo",
     img: "../../public/assets/carta/1693295861731_CBK_MENU-PET-1P.png",
     to: "menupollo",
   },
   {
-    id: 5,
+    id: 4,
     title: "king jr.meal",
     img: "../../public/assets/carta/1687335196414_King_Jr-hd-esp-categ.png",
     to: "king",
   },
   {
-    id: 6,
+    id: 5,
     title: "promociones",
     img: "../../public/assets/carta/1661412360853_img-cat-promo-hd.png",
     to: "promociones",
   },
   {
-    id: 7,
+    id: 6,
     title: "king ahorro",
     img: "../../public/assets/carta/1678341824344_Bodegon.png",
     to: "kingAhorro",
   },
   {
-    id: 8,
+    id: 7,
     title: "entrantes y snacks",
     img: "../../public/assets/carta/1675428884606_bodegones-app-600x411_cubos-snacks.png",
-    to: "kingAhorro",
+    to: "snacks",
+  },
+  {
+    id: 8,
+    title: "100% vegetariano",
+    img: "../../public/assets/carta/1648716533893_whopper-Vegetal_new.png",
+    to: "100vegetariano",
   },
   {
     id: 9,
-    title: "100% vegetariano",
-    img: "../../public/assets/carta/1648716533893_whopper-Vegetal_new.png",
-    to: "100vegetariano",
-  },
-  {
-    id: 10,
-    title: "100% vegetariano",
-    img: "../../public/assets/carta/1648716533893_whopper-Vegetal_new.png",
-    to: "100vegetariano",
-  },
-  {
-    id: 11,
     title: "hamburguesas",
     img: "../../public/assets/carta/1693296214128_CBK-SS-2P.png",
     to: "hamburguesas",
   },
   {
-    id: 12,
+    id: 10,
     title: "postres",
     img: "../../public/assets/carta/1687335561808_bodegon-milka_esp.png",
     to: "postres",
   },
   {
-    id: 13,
+    id: 11,
     title: "sin gluten",
     img: "../../public/assets/carta/1682054801763_whoppe-sin-gluten-new.png",
     to: "singluten",
   },
   {
-    id: 14,
+    id: 12,
     title: "ensaladas",
     img: "../../public/assets/carta/1660727676038_ENSALADA_ORIGINAL_SIN_PEPINO.png",
     to: "ensaladas",
   },
   {
-    id: 15,
+    id: 13,
     title: "salsas",
     img: "../../public/assets/carta/1635332074207_sauces.png",
     to: "salsas",
   },
 
   {
-    id: 16,
+    id: 14,
     title: "bebidas y cafés",
     img: "../../public/assets/carta/1626330906435_img-category-bebidas@2x.png",
     to: "bebidas",
   },
   {
-    id: 17,
+    id: 15,
     title: "dogpper",
     img: "../../public/assets/carta/1650275448609_Dogpper.png",
     to: "dogper",
   },
 ];
+
+//menus individuales
+
 const angus = [
   {
     id: 0,
@@ -504,6 +496,220 @@ const novedades = [
     img: "../../public/assets/novedades/1687342437778_milka_clasico_esp.png",
   },
 ];
+const parrilla = [
+  {
+    id: 0,
+    title: "menú smoky steakhouse (1 carne)",
+    img: "../../public/assets/parrilla/1661168250505_Menu-Steakhouse-vaso-new.png",
+    to: "menuSteak1",
+  },
+  {
+    id: 1,
+    title: "menú brutal big bang (2 carnes)",
+    img: "../../public/assets/parrilla/1690802631972_Brutal_Big_Bang_menu_2C.png",
+    to: "bgbang2",
+  },
+
+  {
+    id: 2,
+    title: "menú brutal big bang (1 carne)",
+    img: "../../public/assets/parrilla/1690802698677_Brutal_Big_Bang_menu_1C.png",
+  },
+  {
+    id: 3,
+    title: "menú duo bacon cheddar (2 carnes)",
+    img: "../../public/assets/parrilla/1679303531552_homeria_duo-bacon-cheddar-menu_2c.png",
+  },
+  {
+    id: 4,
+    title: "menú duo bacon cheddar (1 carnes)",
+    img: "../../public/assets/parrilla/1679303651069_homeria_duo-bacon-cheddar-menu_1c.png",
+  },
+  {
+    id: 5,
+    title: "menú whooper",
+    img: "../../public/assets/parrilla/1661170250431_Menu-Whopper-vaso-new.png",
+  },
+  {
+    id: 6,
+    title: "menú doble cheese bacon xxl",
+    img: "../../public/assets/parrilla/1661166337752_Menu-doble-cheese-bacon-XXL-vaso-new.png",
+  },
+  {
+    id: 7,
+    title: "menú big king xxl",
+    img: "../../public/assets/parrilla/1675406322291_Bodegones_APP_600x411_MENU_BIG_KING_XXL.png",
+  },
+  {
+    id: 8,
+    title: "menú doble steakhouse",
+    img: "../../public/assets/parrilla/1675406231342_Bodegones_APP_600x411_MENU_DOBLE_STEAKHOUSE.png",
+  },
+  {
+    id: 9,
+    title: "menú steakhouse",
+    img: "../../public/assets/parrilla/1661168250505_Menu-Steakhouse-vaso-new.png",
+  },
+  {
+    id: 10,
+    title: "menú the king huevo (2 carnes)",
+    img: "../../public/assets/parrilla/1661169836835_Menu-Doble-THE-KING-HUEVO-vaso-new.png",
+  },
+  {
+    id: 12,
+    title: "menú the king huevo (1 carnes)",
+    img: "../../public/assets/parrilla/1675326116575_Bodegones_APP_600x411_MENU_THE_KING_HUEVO_1C.png",
+  },
+  {
+    id: 13,
+    title: "menú doble whopper",
+    img: "../../public/assets/parrilla/1661167865482_Menu-Doble-Whopper-vaso-new.png",
+  },
+  {
+    id: 14,
+    title: "menú triple whopper",
+    img: "../../public/assets/parrilla/1675323135548_Bodegones_APP_600x411_MENU_TRIPLE_WHOPPER.png",
+  },
+
+  {
+    id: 15,
+    title: "menú big king",
+    img: "../../public/assets/parrilla/1661165652603_Menu-Big-King-vaso-new.png",
+  },
+  {
+    id: 16,
+    title: "menú doble cheeseburger bbq",
+    img: "../../public/assets/parrilla/1661166801910_-Menu-DOBLE-CHEESEBURGER-bbq-vaso-new.png",
+  },
+  {
+    id: 17,
+    title: "menú doble cheeseburger ",
+    img: "../../public/assets/parrilla/1661166634716_Menu-doble-cheese-vaso-new.png",
+  },
+  {
+    id: 18,
+    title: "menú doble cheese bacon",
+    img: "../../public/assets/parrilla/1661166337752_Menu-doble-cheese-bacon-XXL-vaso-new.png",
+  },
+  {
+    id: 19,
+    title: "menú whopper jr",
+    img: "../../public/assets/parrilla/1661244256868_Menu-Whopper-Jr-vaso-new.png",
+  },
+];
+const pollo = [
+  {
+    id: 0,
+    title: "menú smoky steakhouse chicken",
+    img: "../../public/assets/pollo/1692879377192_MENU_SMOKEY_CRISPY_SELLO_NUEVO_VASO_ESP.png",
+  },
+  {
+    id: 1,
+    title: "menú brutal big bang doble crispy",
+    img: "../../public/assets/pollo/1690803036670_Brutal_Big_Bang_Menu_2P.png",
+  },
+  {
+    id: 2,
+    title: "menú brutal big bang crispy",
+    img: "../../public/assets/pollo/1690803654538_Brutal_Big_Bang_menu_1P.png",
+  },
+  {
+    id: 3,
+    title: "menú duo bacon cheddar-doble crispy",
+    img: "../../public/assets/pollo/1693909167757_homeria_duo-bacon-cheddar-menu_crispy_menu.png",
+  },
+  {
+    id: 4,
+    title: "menú doble crispy chicken",
+    img: "../../public/assets/pollo/1687766983450_MENU_DOBLE_CRISPY_CHIKEN.png",
+  },
+  {
+    id: 5,
+    title: "menú long chicken",
+    img: "../../public/assets/pollo/1661244424143_Menu-Long-Chicken-vaso_new.png",
+  },
+  {
+    id: 6,
+    title: "menú chicken wrap",
+    img: "../../public/assets/pollo/1681971333379_Bodegones_APP_MENU_WRAP_POLLO.png",
+  },
+  {
+    id: 7,
+    title: "menú chicken nuggets (x9)",
+    img: "../../public/assets/pollo/1675324241138_bodegones-app-600x411_menu-nuggets-x9.png",
+  },
+];
+const kingjr = [
+  {
+    id: 0,
+    title: "king jr",
+    img: "../../public/assets/kingjr/1687242617715_King_Jr-hd-esp.png",
+  },
+  {
+    id: 1,
+    title: "king jr vegetal",
+    img: "../../public/assets/kingjr/1687242651010_King_Jr-vegetal-hd-esp.png",
+  },
+  {
+    id: 2,
+    title: "king jr sin gluten",
+    img: "../../public/assets/kingjr/1687242680969_King_Jr-sin-gluten-hd-esp.png",
+  },
+];
+const promociones = [
+  {
+    id: 0,
+    title: "king jr",
+    img: "../../public/assets/promociones/1692166382384_Cartas_Baraja_new.png",
+  },
+];
+const kingahorro = [
+  {
+    id: 0,
+    title: "king ahorro menú cheeseburger",
+    img: "../../public/assets/kingahorro/1682577852307_Homeria_MENU_PET_CHEESEBURGER_600x411.png",
+  },
+  {
+    id: 1,
+    title: "king ahorro menú cheeseburger vegetal",
+    img: "../../public/assets/kingahorro/1682577898815_Homeria_MENU_PET_CHEESEBURGER_Vegetal_600x411.png",
+  },
+  {
+    id: 2,
+    title: "king ahorro menú crispy chicken",
+    img: "../../public/assets/kingahorro/1678187149754_menu-crisppy-chicken_pet.png",
+  },
+  {
+    id: 3,
+    title: "king ahorro menú chicken burger",
+    img: "../../public/assets/kingahorro/1682581402547_PET_Menu_CHIKEN_BURGER.png",
+  },
+  {
+    id: 4,
+    title: "king ahorro menú doble cheeseburger bbq",
+    img: "../../public/assets/kingahorro/1678187230963_M_doble_cheeseBurger_BBQ.png",
+  },
+  {
+    id: 5,
+    title: "king ahorro menú vegetal doble cheeseburger bbq",
+    img: "../../public/assets/kingahorro/1678187349474_Homeria_MENU_PET_DOBLE_CHEESEBURGER_BBQ_Vegetal_600x411.png",
+  },
+  {
+    id: 6,
+    title: "king ahorro menú big king",
+    img: "../../public/assets/kingahorro/1681724935288_MENU_PET_BigKing.png",
+  },
+  {
+    id: 7,
+    title: "king ahorro menú big king vegetal",
+    img: "../../public/assets/kingahorro/1681724941891_MENU_PET_BIG_KING_Vegetal.png",
+  },
+  {
+    id: 8,
+    title: "king ahorro menú big king pollo",
+    img: "../../public/assets/kingahorro/1682577211500_Menu_PET_Big_King_Pollo.png",
+  },
+];
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -528,9 +734,6 @@ export const Provider = ({ children }) => {
       to: to,
     });
   };
-  // useEffect(() => {
-  //   console.log(menuMostrar);
-  // }, [menuMostrar]);
 
   return (
     <AuthContext.Provider
@@ -556,6 +759,11 @@ export const Provider = ({ children }) => {
         menuMostrar,
         angus,
         novedades,
+        parrilla,
+        pollo,
+        kingjr,
+        promociones,
+        kingahorro,
       }}
     >
       {children}

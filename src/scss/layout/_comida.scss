@@ -39,6 +39,7 @@
     height: 3rem;
     border-radius: 2rem;
     border: 2px solid #ee7700;
+    margin-bottom: 2rem;
     // text-align: center;
     display: flex;
     align-items: center;
@@ -51,6 +52,7 @@
     padding: 1.7rem;
     width: 100%;
     fill: #ee7700;
+
     &:hover {
       fill: white;
     }
@@ -59,12 +61,42 @@
   }
 }
 .Menus {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  @include m.desktop {
+    margin-bottom: 4.8rem;
+  }
   &-div {
+    width: 100%;
+    max-width: 18rem;
+    border-radius: 1rem;
+    background-color: #f5ebdc;
+    cursor: pointer;
   }
   &-img {
+    transition: all 0.5s ease-in-out;
+    padding: 2rem;
   }
   &-subcontainer {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    border-left: solid 2px #f5ebdc;
+    border-bottom: solid 2px #f5ebdc;
+    border-right: solid 2px #f5ebdc;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
   }
   &-h4 {
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-transform: uppercase;
   }
+}
+
+.Menus-div:hover .Menus-img {
+  padding: 1rem;
 }
