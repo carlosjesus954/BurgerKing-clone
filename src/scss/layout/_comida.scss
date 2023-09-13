@@ -59,6 +59,9 @@
   }
   &-container {
   }
+  &-cards--active {
+    border-bottom: solid 3px black;
+  }
 }
 .Menus {
   display: flex;
@@ -75,6 +78,10 @@
     border-radius: 1rem;
     background-color: #f5ebdc;
     cursor: pointer;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
   }
   &-img {
     transition: all 0.5s ease-in-out;

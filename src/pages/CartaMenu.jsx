@@ -4,7 +4,8 @@ import { AuthContext } from "../context/AuthContext";
 import { MenusTipo } from "./components/MenusTipo";
 
 export const CartaMenu = () => {
-  const { cartaPrincipal, mostrarComida } = useContext(AuthContext);
+  const { cartaPrincipal, mostrarComida, menuMostrar } =
+    useContext(AuthContext);
   const cartaMenu = ({ id, to }) => {
     mostrarComida(id, to);
   };
@@ -18,7 +19,9 @@ export const CartaMenu = () => {
             const to = ele.to;
             return (
               <div
-                className="Comida-cards"
+                className={`Comida-cards  ${
+                  menuMostrar.id === ele.id ? "Comida-cards--active" : ""
+                }`}
                 key={ele.id}
                 onClick={() => cartaMenu({ id, to })}
               >

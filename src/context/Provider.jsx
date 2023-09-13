@@ -376,7 +376,7 @@ const cartaPrincipal = [
     id: 6,
     title: "king ahorro",
     img: "../../public/assets/carta/1678341824344_Bodegon.png",
-    to: "kingAhorro",
+    to: "kingahorro",
   },
   {
     id: 7,
@@ -410,25 +410,19 @@ const cartaPrincipal = [
   },
   {
     id: 12,
-    title: "ensaladas",
-    img: "../../public/assets/carta/1660727676038_ENSALADA_ORIGINAL_SIN_PEPINO.png",
-    to: "ensaladas",
-  },
-  {
-    id: 13,
     title: "salsas",
     img: "../../public/assets/carta/1635332074207_sauces.png",
     to: "salsas",
   },
 
   {
-    id: 14,
+    id: 13,
     title: "bebidas y cafés",
     img: "../../public/assets/carta/1626330906435_img-category-bebidas@2x.png",
     to: "bebidas",
   },
   {
-    id: 15,
+    id: 14,
     title: "dogpper",
     img: "../../public/assets/carta/1650275448609_Dogpper.png",
     to: "dogper",
@@ -556,43 +550,43 @@ const parrilla = [
     img: "../../public/assets/parrilla/1661169836835_Menu-Doble-THE-KING-HUEVO-vaso-new.png",
   },
   {
-    id: 12,
+    id: 11,
     title: "menú the king huevo (1 carnes)",
     img: "../../public/assets/parrilla/1675326116575_Bodegones_APP_600x411_MENU_THE_KING_HUEVO_1C.png",
   },
   {
-    id: 13,
+    id: 12,
     title: "menú doble whopper",
     img: "../../public/assets/parrilla/1661167865482_Menu-Doble-Whopper-vaso-new.png",
   },
   {
-    id: 14,
+    id: 13,
     title: "menú triple whopper",
     img: "../../public/assets/parrilla/1675323135548_Bodegones_APP_600x411_MENU_TRIPLE_WHOPPER.png",
   },
 
   {
-    id: 15,
+    id: 14,
     title: "menú big king",
     img: "../../public/assets/parrilla/1661165652603_Menu-Big-King-vaso-new.png",
   },
   {
-    id: 16,
+    id: 15,
     title: "menú doble cheeseburger bbq",
     img: "../../public/assets/parrilla/1661166801910_-Menu-DOBLE-CHEESEBURGER-bbq-vaso-new.png",
   },
   {
-    id: 17,
+    id: 16,
     title: "menú doble cheeseburger ",
     img: "../../public/assets/parrilla/1661166634716_Menu-doble-cheese-vaso-new.png",
   },
   {
-    id: 18,
+    id: 17,
     title: "menú doble cheese bacon",
     img: "../../public/assets/parrilla/1661166337752_Menu-doble-cheese-bacon-XXL-vaso-new.png",
   },
   {
-    id: 19,
+    id: 18,
     title: "menú whopper jr",
     img: "../../public/assets/parrilla/1661244256868_Menu-Whopper-Jr-vaso-new.png",
   },
@@ -710,6 +704,561 @@ const kingahorro = [
     img: "../../public/assets/kingahorro/1682577211500_Menu_PET_Big_King_Pollo.png",
   },
 ];
+const entrantes = [
+  {
+    id: 0,
+    title: "italian sticks",
+    img: "../../public/assets/entrantes/1656578538696_Homeria_Bodegones_ITALIAN_STICKS_X8_600x411.png",
+  },
+  {
+    id: 1,
+    title: "alitas de pollo",
+    img: "../../public/assets/entrantes/1667459837236_Homeria_Alitas_3UDS_600X411.png",
+  },
+
+  {
+    id: 2,
+    title: "chicken nuggets",
+    img: "../../public/assets/entrantes/1625038151642_nuggets_x6.png",
+  },
+  {
+    id: 3,
+    title: "patata clásicas",
+    img: "../../public/assets/entrantes/1660721215568_Patatas_clasicas-new.png",
+  },
+  {
+    id: 4,
+    title: "patatas supreme",
+    img: "../../public/assets/entrantes/1515751854847_Supreme_Sour.png",
+  },
+  {
+    id: 5,
+    title: "chili cheese bites",
+    img: "../../public/assets/entrantes/1660726160893_Chili-Cheese-Bites-x9-new.png",
+  },
+  {
+    id: 6,
+    title: "king aros de cebolla",
+    img: "../../public/assets/entrantes/1660727204063_AROS-DE-CEBOLLA-x10-NEW.png",
+  },
+  {
+    id: 7,
+    title: "nuggets vegetales",
+    img: "../../public/assets/entrantes/1675841765115_bodegones-app-600x411_4_nuggets-vegetales.png",
+  },
+  {
+    id: 8,
+    title: "cubo de nuggets vegetales",
+    img: "../../public/assets/entrantes/1676891663028_CUBO_NUGGETS_x24_Vegetal_(2).png",
+  },
+  {
+    id: 9,
+    title: "cubo de alitas",
+    img: "../../public/assets/entrantes/1675944045877_bodegones-app-600x411_4_cubo-alitas.png",
+  },
+  {
+    id: 10,
+    title: "cubo de alitas (x8) + nuggets",
+    img: "../../public/assets/entrantes/1675944124335_bodegones-app-600x411_4_cubo-alitas_nuggets.png",
+  },
+  {
+    id: 11,
+    title: "cubo de nuggets",
+    img: "../../public/assets/entrantes/1660724133128_CUBO-NUGGETS-x24-new.png",
+  },
+  {
+    id: 12,
+    title: "cubo de patatas clásicas",
+    img: "../../public/assets/entrantes/1660724441667_CUBO_FRIES_CLASICAS_NEW.png",
+  },
+  {
+    id: 13,
+    title: "cubo de patatas supreme",
+    img: "../../public/assets/entrantes/1660724478613_CUBO_FRIES_SUPREME_NEW.png",
+  },
+
+  {
+    id: 14,
+    title: "cubo king aros",
+    img: "../../public/assets/entrantes/1660724821498_CUBO_ALITAS_AROS_NUGGETS-NEW.png",
+  },
+  {
+    id: 15,
+    title: "cubo chili cheese bites",
+    img: "../../public/assets/entrantes/1660724179482_CUBO_NUGGESTS_ALITAS_CHILLIS_NEW.png",
+  },
+  {
+    id: 16,
+    title: "king fries (+ cheddar + bacon + cebolla) ",
+    img: "../../public/assets/entrantes/1575541713387_PATATAS-QUESO_BACON_CEBOLLA_nuevas.png",
+  },
+  {
+    id: 17,
+    title: "king supreme (+ cheddar + bacon + cebolla)",
+    img: "../../public/assets/entrantes/1575968734427_PATATAS-SUPREME-QUESO_BACON_CEBOLLA.png",
+  },
+  {
+    id: 18,
+    title: "patatas sin gluten",
+    img: "../../public/assets/entrantes/1660722138349_Patatas_clasicas-sin-gluten-new.png",
+  },
+];
+const vegetariano = [
+  {
+    id: 0,
+    title: "big king vegetal",
+    img: "../../public/assets/vegetariano/1676445036678_Big-King-Vegetal.png",
+  },
+  {
+    id: 1,
+    title: "long vegetal",
+    img: "../../public/assets/vegetariano/1648718131136_Long-Vegetal_600x411.png",
+  },
+  {
+    id: 2,
+    title: "whopper vegetal",
+    img: "../../public/assets/vegetariano/1648712609985_whopper-Vegetal_new.png",
+  },
+  {
+    id: 3,
+    title: "nuggets vegetales",
+    img: "../../public/assets/vegetariano/1675841765115_bodegones-app-600x411_4_nuggets-vegetales.png",
+  },
+  {
+    id: 4,
+    title: "cubo de nuggets vegetales ",
+    img: "../../public/assets/vegetariano/1676891663028_CUBO_NUGGETS_x24_Vegetal_(2).png",
+  },
+  {
+    id: 5,
+    title: "menú big king vegetal",
+    img: "../../public/assets/vegetariano/1676445083327_bodegones-app-600x411_4_big-king-v.png",
+  },
+  {
+    id: 6,
+    title: "menú long vegetal",
+    img: "../../public/assets/vegetariano/1647260744221_MLong_Vegetal_Vaso-Ve.png",
+  },
+  {
+    id: 7,
+    title: "menú whopper vegetal",
+    img: "../../public/assets/vegetariano/1648713107671_whopper-Vegetal_menu-vaso-esp-pt.png",
+  },
+  {
+    id: 8,
+    title: "menú nuggets vegetales (x9)",
+    img: "../../public/assets/vegetariano/1675943914544_bodegones-app-600x411_4_menu-nuggets-vegetales.png",
+  },
+];
+const hamburguesas = [
+  {
+    id: 0,
+    title: "smoky steakhourse chicken",
+    img: "../../public/assets/hamburguesas/1692878872992_SMOKEY_CRISPY_SELLO_NUEVO_ESP.png",
+  },
+  {
+    id: 1,
+    title: "smoky steakhourse (1 carne)",
+    img: "../../public/assets/hamburguesas/1692878983258_SMOKEY_1C_SELLO_NUEVO_ESP.png",
+  },
+
+  {
+    id: 2,
+    title: "smoky steakhourse (2 carnes)",
+    img: "../../public/assets/hamburguesas/1692879054625_SMOKEY_2C_SELLO_NUEVO_ESP.png",
+  },
+  {
+    id: 3,
+    title: "cbk doble",
+    img: "../../public/assets/hamburguesas/1693829714306_homeria_MB_CBK.png",
+  },
+  {
+    id: 4,
+    title: "cbk",
+    img: "../../public/assets/hamburguesas/1693829825827_homeria_CCB_sin_semillas_copia.png",
+  },
+  {
+    id: 5,
+    title: "brutal big bang (2 carnes)",
+    img: "../../public/assets/hamburguesas/1690802093491_Brutal_Big_Bang_2C.png",
+  },
+  {
+    id: 6,
+    title: "brutal big bang (1 carne)",
+    img: "../../public/assets/hamburguesas/1690802134069_Brutal_Big_Bang_1C.png",
+  },
+  {
+    id: 7,
+    title: "brutal big bang doble crispy",
+    img: "../../public/assets/hamburguesas/1690802175346_Brutal_Big_Bang_2P.png",
+  },
+  {
+    id: 8,
+    title: "brutal big bang crispy",
+    img: "../../public/assets/hamburguesas/1690802210846_Brutal_Big_Bang_1P.png",
+  },
+  {
+    id: 9,
+    title: "duo bacon cheddar (2 carnes)",
+    img: "../../public/assets/hamburguesas/1693909322303_homeria_duo-bacon-cheddar-menu_doble-carne_SS.png",
+  },
+  {
+    id: 10,
+    title: "duo bacon cheddar (1 carne)",
+    img: "../../public/assets/hamburguesas/1693909356532_homeria_duo-bacon-cheddar-menu_carne_SS.png",
+  },
+  {
+    id: 11,
+    title: "duo bacon cheddar - doble crispy chicken",
+    img: "../../public/assets/hamburguesas/1693909391714_homeria_duo-bacon-cheddar-menu_crispy_SS.png",
+  },
+  {
+    id: 12,
+    title: "big king vegetal",
+    img: "../../public/assets/hamburguesas/1676445036678_Big-King-Vegetal.png",
+  },
+  {
+    id: 13,
+    title: "long vegetal",
+    img: "../../public/assets/hamburguesas/1648718131136_Long-Vegetal_600x411.png",
+  },
+
+  {
+    id: 14,
+    title: "whopper vegetal",
+    img: "../../public/assets/hamburguesas/1648712609985_whopper-Vegetal_new.png",
+  },
+  {
+    id: 15,
+    title: "whopper",
+    img: "../../public/assets/hamburguesas/1660728702734_whopper-new.png",
+  },
+  {
+    id: 16,
+    title: "doble cheese bacon xxl",
+    img: "../../public/assets/hamburguesas/1660736198585_doble-cheese-bacon-new.png",
+  },
+  {
+    id: 17,
+    title: "big king xxl",
+    img: "../../public/assets/hamburguesas/1675158582375_Homeria_BigKingXXL_600x411.png",
+  },
+  {
+    id: 18,
+    title: "doble steakhouse",
+    img: "../../public/assets/hamburguesas/1675844203911_bodegones-app-600x411_doble-steackhouse.png",
+  },
+  {
+    id: 19,
+    title: "steakhouse",
+    img: "../../public/assets/hamburguesas/1660734544367_steakhouse-new.png",
+  },
+  {
+    id: 20,
+    title: "the king huevo (2 carnes)",
+    img: "../../public/assets/hamburguesas/1660733707332_the-king-huevo-2c.new.png",
+  },
+  {
+    id: 21,
+    title: "the king huevo (1 carne)",
+    img: "../../public/assets/hamburguesas/1686128930780_THE_KING_HUEVO_1C_600x411.png",
+  },
+  {
+    id: 22,
+    title: "doble whopper",
+    img: "../../public/assets/hamburguesas/1660735394192_doble-whopper-new.png",
+  },
+
+  {
+    id: 23,
+    title: "triple whopper",
+    img: "../../public/assets/hamburguesas/1676898285441_TRIPLE_WHOPPER.png",
+  },
+  {
+    id: 24,
+    title: "big king",
+    img: "../../public/assets/hamburguesas/1675158551533_Homeria_BigKing_600x411.png",
+  },
+  {
+    id: 25,
+    title: "doble cheeseburger bbq",
+    img: "../../public/assets/hamburguesas/1660735627087_doble-cheese-burger-bbq-new.png",
+  },
+  {
+    id: 26,
+    title: "cheeseburger",
+    img: "../../public/assets/hamburguesas/1675158673022_Homeria_CHEESEBURGER_L600x411.png",
+  },
+  {
+    id: 27,
+    title: "doble cheese bacon",
+    img: "../../public/assets/hamburguesas/1660735627087_doble-cheese-burger-bbq-new.png",
+  },
+
+  {
+    id: 28,
+    title: "doble cheese salad",
+    img: "../../public/assets/hamburguesas/1660735839150_doble-cheese-salad-new.png",
+  },
+
+  {
+    id: 29,
+    title: "burger",
+    img: "../../public/assets/hamburguesas/1676446050749_Bodegones_APP_600x411_BURGER_KING_JR.png",
+  },
+  {
+    id: 30,
+    title: "whopper jr",
+    img: "../../public/assets/hamburguesas/1676446120994_Homeria_WHOPPER_JR_600x411.png",
+  },
+  {
+    id: 31,
+    title: "long chicken",
+    img: "../../public/assets/hamburguesas/1660734817070_Long_chicken_new.png",
+  },
+  {
+    id: 32,
+    title: "crispy chicken",
+    img: "../../public/assets/hamburguesas/1660736572217_crispy-chicken-new.png",
+  },
+  {
+    id: 33,
+    title: "chicken wrap",
+    img: "../../public/assets/hamburguesas/1675324034781_bodegones-app-600x411_wrap-pollo.png",
+  },
+];
+
+const postres = [
+  {
+    id: 0,
+    title: "king fusion",
+    img: "../../public/assets/postres/1679986427064_Homeria_Bodegon_5_King_Fusion_600X411.png",
+  },
+  {
+    id: 1,
+    title: "shakes",
+    img: "../../public/assets/postres/1675841207272_bodegones-app-600x411_4_shakes.png",
+  },
+  {
+    id: 2,
+    title: "burger king sandy",
+    img: "../../public/assets/postres/1658813678863_categ_Sandy.png",
+  },
+  {
+    id: 3,
+    title: "cono helado",
+    img: "../../public/assets/postres/1675068709957_bodegones-cono-nutella_dosconos.png",
+  },
+  {
+    id: 4,
+    title: "cofre caliente",
+    img: "../../public/assets/postres/1675422018763_bodegones-app-600x411-3_2gofres.png",
+  },
+  {
+    id: 5,
+    title: "tarta oreo",
+    img: "../../public/assets/postres/1582886037417_Tarta_oreo_Nueva.png",
+  },
+  {
+    id: 6,
+    title: "danonino pettidino fresa",
+    img: "../../public/assets/postres/1669704844969_Homeria_licencia-kj_600x411_danonino_nov2022.png",
+  },
+  {
+    id: 7,
+    title: "brownie",
+    img: "../../public/assets/postres/1572343846419_Brownie.png",
+  },
+];
+const singluten = [
+  {
+    id: 0,
+    title: "patatas sin gluten",
+    img: "../../public/assets/singluten/1660722138349_Patatas_clasicas-sin-gluten-new.png",
+  },
+  {
+    id: 1,
+    title: "menú whopper sin gluten",
+    img: "../../public/assets/singluten/1661242007287_-Menu-Whopper-vaso-sin-gluten.png",
+  },
+  {
+    id: 2,
+    title: "whopper sin gluten",
+    img: "../../public/assets/singluten/1660730028290_whoppe-sin-gluten-new.png",
+  },
+  {
+    id: 3,
+    title: "cheeseburger sin gluten",
+    img: "../../public/assets/singluten/1608535257776_Hamburguesa_con_Queso_sin_gluten_Logo_New.png",
+  },
+  {
+    id: 4,
+    title: "burger sin gluten",
+    img: "../../public/assets/singluten/1608535244754_Hamburguesa_sin_gluten_Logo_New.png",
+  },
+];
+const salsas = [
+  {
+    id: 0,
+    title: "sour cream",
+    img: "../../public/assets/salsas/1672209581588_homeria_salsa-heinz_sour.png",
+  },
+  {
+    id: 1,
+    title: "salsa miel y mostaza",
+    img: "../../public/assets/salsas/1672209568327_homeria_salsa-heinz_honeymustard.png",
+  },
+  {
+    id: 2,
+    title: "salsa barbacoa",
+    img: "../../public/assets/salsas/1672209546218_homeria_salsa-heinz_barbacoa.png",
+  },
+  {
+    id: 3,
+    title: "salsa queso",
+    img: "../../public/assets/salsas/1526548909756_QUESO_DIP.jpg",
+  },
+  {
+    id: 4,
+    title: "salsa mayonesa",
+    img: "../../public/assets/salsas/1672209575183_homeria_salsa-heinz_mayo.png",
+  },
+];
+
+const bebidastipo = [
+  {
+    id: 0,
+    title: "café y te",
+    img: "../../public/assets/tiposbebida/img-cafe-category@2x.png",
+  },
+  {
+    id: 1,
+    title: "bebidas",
+    img: "../../public/assets/tiposbebida/img-refrescos-category@2x.png",
+  },
+];
+const cafe = [
+  {
+    id: 0,
+    title: "café expresso",
+    img: "../../public/assets/tiposbebida/cafes/1523432026881_Cafe_Espresso_378x268.jpg",
+  },
+  {
+    id: 1,
+    title: "café americano",
+    img: "../../public/assets/tiposbebida/cafes/1523432044755_Cafe_Americano_378x268.jpg",
+  },
+  {
+    id: 2,
+    title: "café capuccino",
+    img: "../../public/assets/tiposbebida/cafes/1523432076245_Capuccino_378x268.jpg",
+  },
+  {
+    id: 3,
+    title: "café latte",
+    img: "../../public/assets/tiposbebida/cafes/1523432110096_Cafe_Latte_378x268.jpg",
+  },
+  {
+    id: 4,
+    title: "café macciato",
+    img: "../../public/assets/tiposbebida/cafes/1523432149605_Cafe_Macchiato_378x268.jpg",
+  },
+  {
+    id: 5,
+    title: "café descafeinado expresso",
+    img: "../../public/assets/tiposbebida/cafes/1575545571923_1523432009879_Cafe_Espresso_378x268.png",
+  },
+];
+const refrescos = [
+  {
+    id: 0,
+    title: "coca-cola",
+    img: "../../public/assets/tiposbebida/refrescos/1661171248886_Homeria_600x411_Bebidas-CC-Original.png",
+  },
+  {
+    id: 1,
+    title: "agua mineral",
+    img: "../../public/assets/tiposbebida/refrescos/1473146317131_agua.png",
+  },
+  {
+    id: 2,
+    title: "cerveza",
+    img: "../../public/assets/tiposbebida/refrescos/1465453882086_Cerveza.png",
+  },
+  {
+    id: 3,
+    title: "coca-cola zero",
+    img: "../../public/assets/tiposbebida/refrescos/1661171529271_Bebidas-CC-ZERO-vaso-new.png",
+  },
+  {
+    id: 4,
+    title: "cerveza sin alcohol",
+    img: "../../public/assets/tiposbebida/refrescos/1562599807914_Cerveza_sin_alcohol.png",
+  },
+  {
+    id: 5,
+    title: "coca-cola zero zero",
+    img: "../../public/assets/tiposbebida/refrescos/1656311055820_Coca_Cola_Zero_Zero.png",
+  },
+  {
+    id: 6,
+    title: "fanta naranja zero",
+    img: "../../public/assets/tiposbebida/refrescos/1595931712585_Naranja_Zero.png",
+  },
+  {
+    id: 7,
+    title: "fanta limón zero",
+    img: "../../public/assets/tiposbebida/refrescos/1595931970340_Limon_Zero.png",
+  },
+  {
+    id: 8,
+    title: "nestea sin azúcar",
+    img: "../../public/assets/tiposbebida/refrescos/1595932491671_Nestea.png",
+  },
+  {
+    id: 9,
+    title: "trina",
+    img: "../../public/assets/tiposbebida/refrescos/1565091336509_Trina_LoCal.png",
+  },
+  {
+    id: 10,
+    title: "troma zero lata 33 cl",
+    img: "../../public/assets/tiposbebida/refrescos/1672902870223_Homeria_lataTrina_600X411.png",
+  },
+  {
+    id: 11,
+    title: "monster ultra white 500 ml",
+    img: "../../public/assets/tiposbebida/refrescos/1646988144328_Homeria_Monster_esp_new.png",
+  },
+  {
+    id: 12,
+    title: "monster energy 500 ml",
+    img: "../../public/assets/tiposbebida/refrescos/1606206902211_Moster_Energy_500ml.png",
+  },
+  {
+    id: 13,
+    title: "monster mango loco",
+    img: "../../public/assets/tiposbebida/refrescos/1646724003667_monster-mango-loco-sin-dest.png",
+  },
+  {
+    id: 14,
+    title: "aquatius zero",
+    img: "../../public/assets/tiposbebida/refrescos/1595935703771_Aquarius.png",
+  },
+  {
+    id: 15,
+    title: "caprisun tropical",
+    img: "../../public/assets/tiposbebida/refrescos/1656312366800_TP_FruitCrush_Tropical.png",
+  },
+];
+const dogper = [
+  {
+    id: 0,
+    title: "dogper",
+    parr: "Si tu perro es de los que no te deja comer tranquilo, ¡píllale su propio menú!, porque él también se merece gozar de todo el sabor de la parrilla. Añade el hueso Dogpper a tu pedido, y ya de paso disfruta de tu comida en paz (guiño guiño)",
+    img: "../../public/assets/carta/1650275448609_Dogpper.png",
+  },
+];
 export const Provider = ({ children }) => {
   const [menu, setmenu] = useState(false);
   const [linkExtra, setLinkExtra] = useState(false);
@@ -764,6 +1313,16 @@ export const Provider = ({ children }) => {
         kingjr,
         promociones,
         kingahorro,
+        entrantes,
+        vegetariano,
+        hamburguesas,
+        postres,
+        singluten,
+        salsas,
+        bebidastipo,
+        dogper,
+        cafe,
+        refrescos,
       }}
     >
       {children}

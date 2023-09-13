@@ -12,6 +12,16 @@ export const MenusTipo = () => {
     kingjr,
     promociones,
     kingahorro,
+    entrantes,
+    vegetariano,
+    hamburguesas,
+    postres,
+    singluten,
+    salsas,
+    bebidastipo,
+    dogper,
+    cafe,
+    refrescos,
   } = useContext(AuthContext);
   console.log(menuMostrar.to);
   return (
@@ -82,8 +92,96 @@ export const MenusTipo = () => {
               </div>
             );
           })
-        : menuMostrar.to === "kingAhorro"
+        : menuMostrar.to === "kingahorro"
         ? kingahorro.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "snacks"
+        ? entrantes.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "100vegetariano"
+        ? vegetariano.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "hamburguesas"
+        ? hamburguesas.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "postres"
+        ? postres.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "singluten"
+        ? singluten.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "salsas"
+        ? salsas.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "bebidas"
+        ? bebidastipo.map((ele) => {
+            return (
+              <div className="Menus-div" key={ele.id}>
+                <img src={ele.img} alt={ele.title} className="Menus-img" />
+                <div className="Menus-subcontainer">
+                  <h4 className="Menus-h4">{ele.title}</h4>
+                </div>
+              </div>
+            );
+          })
+        : menuMostrar.to === "dogper"
+        ? dogper.map((ele) => {
             return (
               <div className="Menus-div" key={ele.id}>
                 <img src={ele.img} alt={ele.title} className="Menus-img" />
