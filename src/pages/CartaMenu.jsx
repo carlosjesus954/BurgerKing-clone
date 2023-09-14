@@ -2,6 +2,8 @@ import React from "react";
 import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { MenusTipo } from "./components/MenusTipo";
+import { useNavigate } from "react-router-dom";
+import { Carta } from "./Carta";
 
 export const CartaMenu = () => {
   const { cartaPrincipal, mostrarComida, menuMostrar } =
@@ -10,6 +12,10 @@ export const CartaMenu = () => {
     mostrarComida(id, to);
   };
 
+  const navigate = useNavigate();
+  const backCarta = () => {
+    navigate("/carta");
+  };
   return (
     <section className="Comida Wrapper">
       <article className="Comida-global">
@@ -31,12 +37,13 @@ export const CartaMenu = () => {
             );
           })}
         </div>
-        <div className="Comida-container">
+        <div className="Comida-container" to={"carta"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fillRule="currentColor"
             className="Comida-btn"
             viewBox="0 0 16 16"
+            onClick={() => backCarta()}
           >
             <path
               fillRule="evenodd"

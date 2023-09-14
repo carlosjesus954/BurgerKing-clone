@@ -12,11 +12,14 @@ export const NavBar = () => {
     <header className="Header">
       <div className="Header-global Wrapper">
         <div className="Header-container">
-          <img
-            src="../assets/logoBK.svg"
-            alt="logo burgerking"
-            className="Header-logo"
-          />
+          <NavLink to={"/"}>
+            <img
+              src="../assets/logoBK.svg"
+              alt="logo burgerking"
+              className="Header-logo"
+            />
+          </NavLink>
+
           <div
             className={`Header-container--englobal ${
               menu ? "Header-container--englobalActive" : ""
@@ -29,7 +32,7 @@ export const NavBar = () => {
                     key={ele.id}
                     to={ele.to}
                     className="Header-link"
-                    onClick={() => comprobarNav()}
+                    onClick={() => openMenu()}
                   >
                     {ele.title}
                   </NavLink>
