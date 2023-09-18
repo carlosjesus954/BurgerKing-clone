@@ -20,10 +20,9 @@ export const MenusTipo = () => {
     salsas,
     bebidastipo,
     dogper,
-    cafe,
-    refrescos,
+    mostrarbebida,
   } = useContext(AuthContext);
-  console.log(menuMostrar.to);
+
   return (
     <div className="Menus">
       {menuMostrar.to === "angus"
@@ -171,8 +170,14 @@ export const MenusTipo = () => {
           })
         : menuMostrar.to === "bebidas"
         ? bebidastipo.map((ele) => {
+            const id = ele.id;
+            const to = ele.to;
             return (
-              <div className="Menus-div" key={ele.id}>
+              <div
+                className="Menus-div"
+                key={ele.id}
+                onClick={() => mostrarbebida(id, to)}
+              >
                 <img src={ele.img} alt={ele.title} className="Menus-img" />
                 <div className="Menus-subcontainer">
                   <h4 className="Menus-h4">{ele.title}</h4>
