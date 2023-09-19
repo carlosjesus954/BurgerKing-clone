@@ -1,6 +1,7 @@
 import React from "react";
 import { useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const MenusTipo = () => {
   const {
@@ -21,7 +22,17 @@ export const MenusTipo = () => {
     bebidastipo,
     dogper,
     mostrarbebida,
+    cafe,
+    drinks,
+    refrescos,
   } = useContext(AuthContext);
+  const navigate = useNavigate();
+  const tipoBebida = (id, to) => {
+    mostrarbebida(id, to);
+  };
+  const drinksTo = drinks.to;
+
+  console.log(drinksTo);
 
   return (
     <div className="Menus">
@@ -176,7 +187,7 @@ export const MenusTipo = () => {
               <div
                 className="Menus-div"
                 key={ele.id}
-                onClick={() => mostrarbebida(id, to)}
+                onClick={() => tipoBebida(id, to)}
               >
                 <img src={ele.img} alt={ele.title} className="Menus-img" />
                 <div className="Menus-subcontainer">

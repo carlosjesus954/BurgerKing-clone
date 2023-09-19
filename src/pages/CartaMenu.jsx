@@ -3,10 +3,10 @@ import { useContext } from "react";
 import { AuthContext } from "../context/AuthContext";
 import { MenusTipo } from "./components/MenusTipo";
 import { useNavigate } from "react-router-dom";
-import { Carta } from "./Carta";
+import { Bebidasycafes } from "./components/Bebidasycafes";
 
 export const CartaMenu = () => {
-  const { cartaPrincipal, mostrarComida, menuMostrar } =
+  const { cartaPrincipal, mostrarComida, menuMostrar, drinks, resetDrinks } =
     useContext(AuthContext);
   const cartaMenu = ({ id, to }) => {
     mostrarComida(id, to);
@@ -15,6 +15,7 @@ export const CartaMenu = () => {
   const navigate = useNavigate();
   const backCarta = () => {
     navigate("/carta");
+    resetDrinks();
   };
   return (
     <section className="Comida Wrapper">
@@ -53,7 +54,11 @@ export const CartaMenu = () => {
         </div>
 
         <div className="Comida-subcontainer">
-          <MenusTipo />
+          {drinks.to === "cafe" || drinks.to === "refrescos" ? (
+            <Bebidasycafes />
+          ) : (
+            <MenusTipo />
+          )}
         </div>
       </article>
     </section>

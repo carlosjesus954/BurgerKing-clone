@@ -1126,137 +1126,134 @@ const salsas = [
 ];
 
 const bebidastipo = [
-  (bebidas = [
-    {
-      id: 0,
-      title: "café y te",
-      img: "../../public/assets/tiposbebida/img-cafe-category@2x.png",
-      to: "cafe",
-    },
-    {
-      id: 1,
-      title: "bebidas",
-      img: "../../public/assets/tiposbebida/img-refrescos-category@2x.png",
-      to: "refrescos",
-    },
-  ]),
-  (cafe = [
-    {
-      id: 0,
-      title: "café expresso",
-      img: "../../public/assets/tiposbebida/cafes/1523432026881_Cafe_Espresso_378x268.jpg",
-    },
-    {
-      id: 1,
-      title: "café americano",
-      img: "../../public/assets/tiposbebida/cafes/1523432044755_Cafe_Americano_378x268.jpg",
-    },
-    {
-      id: 2,
-      title: "café capuccino",
-      img: "../../public/assets/tiposbebida/cafes/1523432076245_Capuccino_378x268.jpg",
-    },
-    {
-      id: 3,
-      title: "café latte",
-      img: "../../public/assets/tiposbebida/cafes/1523432110096_Cafe_Latte_378x268.jpg",
-    },
-    {
-      id: 4,
-      title: "café macciato",
-      img: "../../public/assets/tiposbebida/cafes/1523432149605_Cafe_Macchiato_378x268.jpg",
-    },
-    {
-      id: 5,
-      title: "café descafeinado expresso",
-      img: "../../public/assets/tiposbebida/cafes/1575545571923_1523432009879_Cafe_Espresso_378x268.png",
-    },
-  ]),
-  (refrescos = [
-    {
-      id: 0,
-      title: "coca-cola",
-      img: "../../public/assets/tiposbebida/refrescos/1661171248886_Homeria_600x411_Bebidas-CC-Original.png",
-    },
-    {
-      id: 1,
-      title: "agua mineral",
-      img: "../../public/assets/tiposbebida/refrescos/1473146317131_agua.png",
-    },
-    {
-      id: 2,
-      title: "cerveza",
-      img: "../../public/assets/tiposbebida/refrescos/1465453882086_Cerveza.png",
-    },
-    {
-      id: 3,
-      title: "coca-cola zero",
-      img: "../../public/assets/tiposbebida/refrescos/1661171529271_Bebidas-CC-ZERO-vaso-new.png",
-    },
-    {
-      id: 4,
-      title: "cerveza sin alcohol",
-      img: "../../public/assets/tiposbebida/refrescos/1562599807914_Cerveza_sin_alcohol.png",
-    },
-    {
-      id: 5,
-      title: "coca-cola zero zero",
-      img: "../../public/assets/tiposbebida/refrescos/1656311055820_Coca_Cola_Zero_Zero.png",
-    },
-    {
-      id: 6,
-      title: "fanta naranja zero",
-      img: "../../public/assets/tiposbebida/refrescos/1595931712585_Naranja_Zero.png",
-    },
-    {
-      id: 7,
-      title: "fanta limón zero",
-      img: "../../public/assets/tiposbebida/refrescos/1595931970340_Limon_Zero.png",
-    },
-    {
-      id: 8,
-      title: "nestea sin azúcar",
-      img: "../../public/assets/tiposbebida/refrescos/1595932491671_Nestea.png",
-    },
-    {
-      id: 9,
-      title: "trina",
-      img: "../../public/assets/tiposbebida/refrescos/1565091336509_Trina_LoCal.png",
-    },
-    {
-      id: 10,
-      title: "troma zero lata 33 cl",
-      img: "../../public/assets/tiposbebida/refrescos/1672902870223_Homeria_lataTrina_600X411.png",
-    },
-    {
-      id: 11,
-      title: "monster ultra white 500 ml",
-      img: "../../public/assets/tiposbebida/refrescos/1646988144328_Homeria_Monster_esp_new.png",
-    },
-    {
-      id: 12,
-      title: "monster energy 500 ml",
-      img: "../../public/assets/tiposbebida/refrescos/1606206902211_Moster_Energy_500ml.png",
-    },
-    {
-      id: 13,
-      title: "monster mango loco",
-      img: "../../public/assets/tiposbebida/refrescos/1646724003667_monster-mango-loco-sin-dest.png",
-    },
-    {
-      id: 14,
-      title: "aquatius zero",
-      img: "../../public/assets/tiposbebida/refrescos/1595935703771_Aquarius.png",
-    },
-    {
-      id: 15,
-      title: "caprisun tropical",
-      img: "../../public/assets/tiposbebida/refrescos/1656312366800_TP_FruitCrush_Tropical.png",
-    },
-  ]),
+  {
+    id: 0,
+    title: "café y te",
+    img: "../../public/assets/tiposbebida/img-cafe-category@2x.png",
+    to: "cafe",
+  },
+  {
+    id: 1,
+    title: "bebidas",
+    img: "../../public/assets/tiposbebida/img-refrescos-category@2x.png",
+    to: "refrescos",
+  },
 ];
-// const cafe = [];
-// const refrescos = [];
+const cafe = [
+  {
+    id: 0,
+    title: "café expresso",
+    img: "../../public/assets/tiposbebida/cafes/1523432026881_Cafe_Espresso_378x268.jpg",
+  },
+  {
+    id: 1,
+    title: "café americano",
+    img: "../../public/assets/tiposbebida/cafes/1523432044755_Cafe_Americano_378x268.jpg",
+  },
+  {
+    id: 2,
+    title: "café capuccino",
+    img: "../../public/assets/tiposbebida/cafes/1523432076245_Capuccino_378x268.jpg",
+  },
+  {
+    id: 3,
+    title: "café latte",
+    img: "../../public/assets/tiposbebida/cafes/1523432110096_Cafe_Latte_378x268.jpg",
+  },
+  {
+    id: 4,
+    title: "café macciato",
+    img: "../../public/assets/tiposbebida/cafes/1523432149605_Cafe_Macchiato_378x268.jpg",
+  },
+  {
+    id: 5,
+    title: "café descafeinado expresso",
+    img: "../../public/assets/tiposbebida/cafes/1575545571923_1523432009879_Cafe_Espresso_378x268.png",
+  },
+];
+
+const refrescos = [
+  {
+    id: 0,
+    title: "coca-cola",
+    img: "../../public/assets/tiposbebida/refrescos/1661171248886_Homeria_600x411_Bebidas-CC-Original.png",
+  },
+  {
+    id: 1,
+    title: "agua mineral",
+    img: "../../public/assets/tiposbebida/refrescos/1473146317131_agua.png",
+  },
+  {
+    id: 2,
+    title: "cerveza",
+    img: "../../public/assets/tiposbebida/refrescos/1465453882086_Cerveza.png",
+  },
+  {
+    id: 3,
+    title: "coca-cola zero",
+    img: "../../public/assets/tiposbebida/refrescos/1661171529271_Bebidas-CC-ZERO-vaso-new.png",
+  },
+  {
+    id: 4,
+    title: "cerveza sin alcohol",
+    img: "../../public/assets/tiposbebida/refrescos/1562599807914_Cerveza_sin_alcohol.png",
+  },
+  {
+    id: 5,
+    title: "coca-cola zero zero",
+    img: "../../public/assets/tiposbebida/refrescos/1656311055820_Coca_Cola_Zero_Zero.png",
+  },
+  {
+    id: 6,
+    title: "fanta naranja zero",
+    img: "../../public/assets/tiposbebida/refrescos/1595931712585_Naranja_Zero.png",
+  },
+  {
+    id: 7,
+    title: "fanta limón zero",
+    img: "../../public/assets/tiposbebida/refrescos/1595931970340_Limon_Zero.png",
+  },
+  {
+    id: 8,
+    title: "nestea sin azúcar",
+    img: "../../public/assets/tiposbebida/refrescos/1595932491671_Nestea.png",
+  },
+  {
+    id: 9,
+    title: "trina",
+    img: "../../public/assets/tiposbebida/refrescos/1565091336509_Trina_LoCal.png",
+  },
+  {
+    id: 10,
+    title: "troma zero lata 33 cl",
+    img: "../../public/assets/tiposbebida/refrescos/1672902870223_Homeria_lataTrina_600X411.png",
+  },
+  {
+    id: 11,
+    title: "monster ultra white 500 ml",
+    img: "../../public/assets/tiposbebida/refrescos/1646988144328_Homeria_Monster_esp_new.png",
+  },
+  {
+    id: 12,
+    title: "monster energy 500 ml",
+    img: "../../public/assets/tiposbebida/refrescos/1606206902211_Moster_Energy_500ml.png",
+  },
+  {
+    id: 13,
+    title: "monster mango loco",
+    img: "../../public/assets/tiposbebida/refrescos/1646724003667_monster-mango-loco-sin-dest.png",
+  },
+  {
+    id: 14,
+    title: "aquatius zero",
+    img: "../../public/assets/tiposbebida/refrescos/1595935703771_Aquarius.png",
+  },
+  {
+    id: 15,
+    title: "caprisun tropical",
+    img: "../../public/assets/tiposbebida/refrescos/1656312366800_TP_FruitCrush_Tropical.png",
+  },
+];
 const dogper = [
   {
     id: 0,
@@ -1285,7 +1282,9 @@ export const Provider = ({ children }) => {
     setLinkExtra(!linkExtra);
     // console.log(linkExtra);
   };
-
+  const resetDrinks = () => {
+    setDrinks({ id: null, to: "" });
+  };
   const mostrarbebida = (id, to) => {
     console.log(id, to);
 
@@ -1342,6 +1341,9 @@ export const Provider = ({ children }) => {
         dogper,
         drinks,
         mostrarbebida,
+        cafe,
+        refrescos,
+        resetDrinks,
       }}
     >
       {children}
